@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about_page</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/bootstrap.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav id="nav-scroll" class="navbar navbar-expand-lg fixed-top ">
+            <div class="container">
+                <a class="navbar-brand me-auto  mb-2" href="#">
+
+                    <img src="./assets/images/hmp-tour-high-resolution-logo-transparent.png" width="170px" alt="">
+
+                </a>
+                <button class="navbar-toggler mt-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="  bi bi-list toggle-sidebar-btn"></i>
+                </button>
+
+
+
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title " id="offcanvasNavbarLabel">HMP Tour</h5>
+                        <button type="button" class="btn-closecanvas ms-auto" data-bs-dismiss="offcanvas">
+
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <ul class="navbar-nav  justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" aria-current="page" href="Home.html">ទំព័រដើម</a>
+                            </li>
+
+                            <li class="sub-dropdown  nav-item   ms-lg-3 position-relative">
+                                <a href="#" class="text-decoration-none text-dropdown nav-link"><span
+                                        class=" ">សេវាកម្ម</span> <i
+                                        class="bi bi-chevron-down toggle-dropdown  "></i></a>
+                                <ul class="sub-nav ">
+                                    <li><a href="restaurants.html">ម្ហូបអាហារ</a></li>
+
+                                    <li><a href="hotel.html#typeroom" smooth>ប្រភេទនៃបន្ទប់</a></li>
+                                    <li><a href="gym.html">ស្ប៉ា និងកន្លែងហាត់ប្រាណ</a></li>
+
+                                    <li><a href="./service.html">សុវត្ថិភាព និងកន្លែងស្អាត</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 " href="hotel.html">សណ្ឋាគារ</a>
+                            </li>
+
+                            <li class="sub-dropdown  nav-item   ms-lg-3 position-relative">
+                                <a href="#" class="text-decoration-none text-dropdown nav-link"><span
+                                        class=" ">កន្លែងកម្សាន្ត</span> <i
+                                        class="bi bi-chevron-down toggle-dropdown  "></i></a>
+                                        <ul class="sub-nav  ">
+                                            <li><a href="./pp.html">ភ្នំពេញ</a></li>
+                                            <li><a href="./siem_reap.html">សៀមរាប</a></li>
+        
+                                            <li><a href="./kampot.html">កំពត</a></li>
+                                            <li><a href="./kep.html">កែប</a></li>
+        
+                                            <li><a href="./kps.html">កំពង់សោម</a></li>
+                                            <li><a href="./koh_kong.html">កោះកុង</a></li>
+                                        </ul>
+                            </li>
+
+                            <li class="sub-dropdown nav-item  ms-lg-4 position-relative">
+                                <a href="#" class="text-decoration-none nav-link active-page text-dropdown"><span
+                                        >ផ្សេងៗ</span> <i class="bi bi-chevron-down toggle-dropdown  "></i></a>
+                                <ul class="sub-nav  ">
+                                    <li><a href="./about_page.html">អំពីយើង</a></li>
+
+                                    <li><a href="./contact.html">ទំនាក់ទំនង</a></li>
+                                    <li><a href="./blog-detail.html">ប្លុក</a></li>
+                                  
+                                    <li><a href="./faq.html">FAQ</a></li>
+                                    <li><a href="./coming.html">ឆាប់ៗនេះ</a></li>
+
+
+
+                                </ul>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="social">
+                    <nav class="header-nav ms-auto ">
+                        <ul class="d-flex align-items-center">
+
+                            <li>
+                                <button type="button" class=" btn btn-mode d-lg-block me-3"
+                                    aria-label="Change to light theme" data-theme-toggle> <i
+                                        class="fa-regular fa-moon"></i></button>
+
+                            </li>
+                            <li class=" dropdown">
+
+                                <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                                    <i class="bi bi-bell"></i>
+                                    <span class="badge   bg-danger badge-number">3</span>
+                                </a><!-- End Notification Icon -->
+
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications ">
+                                    <li class="dropdown-header">
+                                        អ្នកមានការជូនដំណឹងថ្មីចំនួន3
+                                        <a href="#"><span class="badge rounded-pill view-all p-2 ms-2 Kantumruy">
+                                                មើលទាំងអស់
+                                            </span></a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li class="notification-item">
+                                        <!-- <i class="bi bi-exclamation-circle text-warning"></i> -->
+                                        <img src="./assets/images/globe-showing-asia-australia.svg" width="35px" alt="">
+                                        <div>
+                                            <h4>ដំណើរកំសាន្ត</h4>
+                                            <p>ស្វែងរកទីកន្លែងថ្មីជាមួយនឹងដំណើរកម្សាន្តនាពេលខាងមុខរបស់យើង!
+                                                កុំខកខានបទពិសោធន៍ដែលមិនអាចបំភ្លេចបាន និងគោលដៅដ៏អស្ចារ្យ។</p>
+                                            <p>30 min. ago</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li class="notification-item">
+                                        <!-- <i class="bi bi-x-circle text-danger"></i> -->
+                                        <img src="./assets/images/glowing-star.svg" width="35px" alt="">
+                                        <div>
+                                            <h4>ការបញ្ចុះតម្លៃ</h4>
+                                            <p>ការផ្តល់ជូនពេលវេលាមានកំណត់! រីករាយជាមួយការបញ្ចុះតម្លៃ 30%
+                                                លើដំណើរកម្សាន្តដ៏រំភើបរបស់យើង។
+                                                កុំ​ឲ្យ​ឱកាស​នេះ​កន្លង​ផុត​ទៅ​ដើម្បី​ស្វែង​យល់​ពី​កន្លែងកម្សាន្ត​ក្នុង​តម្លៃ​តិច!
+                                            </p>
+                                            <p>1 hr. ago</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li class="notification-item">
+                                        <i class="bi bi-check-circle text-success"></i>
+                                        <div>
+                                            <h4>សេវាកម្មនិងទំនុកចិត្ត</h4>
+                                            <p>.ការធ្វើដំណើរដែលបានគ្រោងទុកយ៉ាងល្អិតល្អន់
+                                                និងមគ្គុទ្ទេសក៍ដែលមានចំណេះដឹងដល់ការដឹកជញ្ជូនប្រកបដោយផាសុកភាព
+                                                និងការអត្ថាធិប្បាយប្រកបដោយការយល់ដឹង
+                                                យើងធានាថាគ្រប់ទិដ្ឋភាពនៃការធ្វើដំណើររបស់អ្នកត្រូវបានយកចិត្តទុកដាក់។</p>
+                                            <p>2 hrs. ago</p>
+                                        </div>
+                                    </li>
+
+
+
+                                </ul>
+                                <!-- End Notification Dropdown Items -->
+
+                            </li>
+                            <li class=" dropdown pe-3">
+
+                                <a class="nav-link nav-profile d-flex align-items-center img-fluid pe-0" href="#"
+                                    data-bs-toggle="dropdown">
+                                    <img src="./assets/images/photo_2023-08-11 12.02.31.jpeg" alt="Profile"
+                                        class="rounded-circle">
+                                    <span class="d-none d-md-block dropdown-toggle ps-2 Dangrek">ទិត្យាពង្ស</span>
+                                </a><!-- End Profile Iamge Icon -->
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile ">
+                                    <li class="dropdown-header">
+                                        <h6 class="Kantumruy">ទិត្យាពង្ស</h6>
+
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="./Profile.html">
+                                            <i class="bi bi-person me-2"></i>
+                                            <span> ប្រវត្តរូប</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="./wish.html">
+                                            <i class="bi bi-bag-heart-fill me-2"></i>
+                                            <span>ចំណង់ចំណូលចិត្ត</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="./hisoty-book.html">
+                                            <i class="bi bi-clock-history me-2"></i>
+                                            <span>ប្រវត្តនៃការកក់</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="./index.html">
+                                            <i class="bi bi-box-arrow-right me-2"></i>
+                                            <span>ចាកចេញ</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <!-- End Profile Nav -->
+
+                        </ul>
+                    </nav>
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid bg-primary py-5 mb-5 faq-bg">
+        <div class="container py-5">
+            <div class="row justify-content-center py-5">
+                <div class="col-lg-10 pt-lg-5 text-center">
+                    <h1 class="display-3 text-white  slideInDown Dangrek">
+                        អំពីពួកយើង</h1>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="about" class="about section py-5">
+
+        <div class="container">
+
+            <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="col-lg-5">
+                    <img src="./assets/images/team.avif" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-7" data-aos="fade-up" data-aos-delay="200">
+                    <div class="content">
+                        <h3 class=" Dangrek">អំពីពួកយើង</h3>
+                        <p class=" Kantumruy">
+                            HMP Tour គឺជាភ្នាក់ងារទេសចរណ៍ដ៏ល្អឥតខ្ចោះសម្រាប់រាល់ការធ្វើដំណើរដែលមិនអាចបំភ្លេចបាន
+                            និងការកក់សណ្ឋាគាររបស់អ្នក។ ជាមួយនឹងមគ្គុទ្ទេសក៍អ្នកជំនាញរបស់យើង យើងមានទាំងវិជ្ជាជីវៈ
+                            និងផ្ទាល់ខ្លួន។ ការធ្វើដំណើររបស់យើងមានបទពិសោធន៍ដែលមិនអាចបំភ្លេចបាន។
+                            និងត្រូវបានចែកចាយតាមរបៀបនិរន្តរភាពដើម្បីការពារបរិស្ថាន។
+                        </p>
+                        <ul class=" Kantumruy list-unstyled">
+                            <li><i class="bi bi-check-circle-fill text-success"></i> <span>យើងផ្តល់ជូននូវសុវត្ថិភាព​​
+                                    និងបរិយាកាសល្អ</span></li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i> <span>យើងផ្តល់ជូននូវសេវាកម្ម
+                                    និងបទពិសោធន៍ដ៏ល្អបំផុតសម្រាប់អតិថិជនរបស់យើង។</span></li>
+                            <li><i class="bi bi-check-circle-fill text-success"></i>
+                                <span>យើងស្វាគមន៍ភាពបត់បែននៃពេលវេលានៃការធ្វើដំណើរសម្រាប់អតិថិជនជាទីស្រឡាញ់របស់យើង។</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header text-center">
+                <h2 class=" Dangrek">សេចក្តីថ្លែងអំណរគុណ</h2>
+            </div>
+            <div class="card-body">
+                <!-- Images Row -->
+                <div class="row mb-4  ">
+                    <div class="col-md-4 py-3">
+                        <img src="./assets/images/mptc-Logo-label.jpeg" alt="Image 1" style="width: 200px;" class="img-fluid rounded mx-auto d-block">
+                    </div>
+                    <div class="col-md-4 py-3 ">
+                        <img src="./assets/images/ant-logo.jpg" alt="Image 2" style="width: 200px;" class="img-fluid rounded mx-auto d-block">
+                    </div>
+                    <div class="col-md-4 py-3">
+                        <img src="./assets/images/cbrd-logo.png" alt="Image 3" style="width: 200px;" class="img-fluid rounded mx-auto d-block">
+                    </div>
+                </div>
+              
+                <p class=" Kantumruy    ">
+                    ជាដំបូង និងសំខាន់បំផុត ខ្ញុំសូមថ្លែងអំណរគុណយ៉ាងស្មោះស្ម័គ្រចំពោះលោកគ្រូ <strong>ចែ សុផល ឆៃយ៉ា បេនលី</strong>  សម្រាប់ការលើកទឹកចិត្តឥតឈប់ឈរ ការណែនាំដ៏មានតម្លៃ និងសម្រាប់ការផ្តល់ធនធានចាំបាច់សម្រាប់បញ្ចប់គម្រោងនេះ។ ការគាំទ្រពី សាលាមានសារៈសំខាន់ក្នុងការធ្វើឱ្យការងារនេះអាចធ្វើទៅបាន។
+                </p>
+                <p class=" Kantumruy">
+                    ខ្ញុំក៏សូមថ្លែងអំណរគុណយ៉ាងជ្រាលជ្រៅចំពោះ ក្រសួង ប្រៃសណីយ៏ និង ទូរគមនាគមន៏ សម្រាប់ការផ្តល់អាហាររូបករណ៏និងផ្តល់ការគាំទ្រដែលត្រូវការសម្រាប់ធ្វើការស្រាវជ្រាវនេះ។
+                </p>
+                <p class=" Kantumruy">
+                    ជាចុងក្រោយ ខ្ញុំសូមថ្លែងអំណរគុណដល់ក្រុមគ្រួសារ មិត្តភ័ក្តិ និងសហការី ដែលបានជួយជ្រោមជ្រែង និងលើកទឹកចិត្តឥតឈប់ឈរក្នុងដំណើរនេះ
+                </p>
+                <p class=" Kantumruy">
+                    គម្រោងនេះនឹងមិនអាចធ្វើទៅបានទេ ប្រសិនបើគ្មានការរួមចំណែករួមពីបុគ្គល និងស្ថាប័នទាំងអស់នេះ ហើយខ្ញុំពិតជាមានអំណរគុណយ៉ាងខ្លាំងចំពោះការចូលរួមរបស់លោកគ្រូ។
+                </p>
+            </div>
+            <!-- <div class="card-footer text-center">
+                <p>Thank you.</p>
+            </div> -->
+        </div>
+    </div>
+    <section class="members py-5 mb-2">
+        <div class="container ">
+            <h2 class="Dangrek text-center pb-3">សមាជិកក្រុម​របស់​យើង</h2>
+            <div class="row">
+                <h1 class="text-white text-center"></h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="card mb-2 overflow-hidden">
+                        <div class="card-body p-0">
+                            <div class="box-satu d-flex flex-column justify-content-center align-items-center">
+                                <div
+                                    class="avatar person position-relative d-flex flex-column justify-content-center align-items-center">
+                                    <div class="teks">
+                                        <h6 class="mt-4 mb-4 Dangrek">ជំនាញ</h6>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <p>HTML</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                                                        role="progressbar" aria-label="Default striped example"
+                                                        style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+                                                        aria-valuemax="100"> 95%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <p>CSS</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                                        role="progressbar" aria-label="Default striped example"
+                                                        style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                                                        aria-valuemax="100">90%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <p>JS</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                                        role="progressbar" aria-label="Default striped example"
+                                                        style="width: 50%" aria-valuenow="90" aria-valuemin="0"
+                                                        aria-valuemax="100">50%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <p>PHOTOSHOP</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                                                        role="progressbar" aria-label="Default striped example"
+                                                        style="width: 80%" aria-valuenow="90" aria-valuemin="0"
+                                                        aria-valuemax="100">80%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <h5 class="mb-0 text-white Dangrek">តុប ឡៃហៀង</h5>
+                                <a href="#" class="text-white Kantumruy">Web designer</a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <ul class="wrapper d-flex justify-content-center p-0 m-1">
+                                <li class="icon facebook">
+                                    <span><i class="fab fa-facebook-f"></i></span>
+                                </li>
+                                <li class="icon twitter">
+                                    <span><i class="fab fa-twitter"></i></span>
+                                </li>
+                                <li class="icon instagram">
+                                    <span><i class="fab fa-instagram"></i></span>
+                                </li>
+                                <li class="icon github">
+                                    <span><i class="fab fa-github"></i></span>
+                                </li>
+                                <li class="icon youtube">
+                                    <span><i class="fab fa-youtube"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="card mb-2 overflow-hidden">
+                        <div class="card-body p-0">
+                            <div class="box-satu d-flex flex-column justify-content-center align-items-center">
+                                <div
+                                    class="avatar-dua person position-relative d-flex flex-column justify-content-center align-items-center">
+                                    <div class="teks">
+                                        <h6 class="mt-4 mb-4 Dangrek">ជំនាញ</h6>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <p>HTML</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                                                        role="progressbar" aria-label="Default striped example"
+                                                        style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+                                                        aria-valuemax="100"> 95%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <p>CSS</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                                        role="progressbar" aria-label="Default striped example"
+                                                        style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                                                        aria-valuemax="100">90%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <p>JS</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                                        role="progressbar" aria-label="Default striped example"
+                                                        style="width: 50%" aria-valuenow="90" aria-valuemin="0"
+                                                        aria-valuemax="100">50%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <p>PHOTOSHOP</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                                                        role="progressbar" aria-label="Default striped example"
+                                                        style="width: 80%" aria-valuenow="90" aria-valuemin="0"
+                                                        aria-valuemax="100">80%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <h5 class="mb-0 text-white Dangrek">សុខ​ ទិត្យាពង្ស</h5>
+                                <a href="#" class="text-white Kantumruy">Web designer</a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <ul class="wrapper d-flex justify-content-center p-0 m-1">
+                                <li class="icon facebook" >
+                                    
+                                    <span><i class="fab fa-facebook-f"></i></span>
+                                </li>
+                                <li class="icon twitter">
+                                    <span><i class="fab fa-twitter"></i></span>
+                                </li>
+                                <li class="icon instagram">
+                                    <span><i class="fab fa-instagram"></i></span>
+                                </li>
+                                <li class="icon github">
+                                    <span><i class="fab fa-github"></i></span>
+                                </li>
+                                <li class="icon youtube">
+                                    <span><i class="fab fa-youtube"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-6">
+                    <div class="card mb-2 overflow-hidden">
+                        <div class="card-body  p-0">
+                            <div class="box-satu d-flex flex-column justify-content-center align-items-center">
+                                <div
+                                    class="avatar-tiga person position-relative d-flex flex-column justify-content-center align-items-center">
+                                    <div class="teks">
+                                        <h6 class="mt-4 mb-4 Dangrek">ជំនាញ</h6>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <p>HTML</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary"
+                                                        role="progressbar" aria-label="Default striped example"
+                                                        style="width: 95%" aria-valuenow="95" aria-valuemin="0"
+                                                        aria-valuemax="100"> 95%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <p>CSS</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger"
+                                                        role="progressbar" aria-label="Default striped example"
+                                                        style="width: 90%" aria-valuenow="90" aria-valuemin="0"
+                                                        aria-valuemax="100">90%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <p>JS</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning"
+                                                        role="progressbar" aria-label="Default striped example"
+                                                        style="width: 50%" aria-valuenow="90" aria-valuemin="0"
+                                                        aria-valuemax="100">50%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-5">
+                                                <p>PHOTOSHOP</p>
+                                            </div>
+                                            <div class="col-7">
+                                                <div class="progress">
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info"
+                                                        role="progressbar" aria-label="Default striped example"
+                                                        style="width: 80%" aria-valuenow="90" aria-valuemin="0"
+                                                        aria-valuemax="100">80%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <h5 class="mb-0 text-white Dangrek">កាន​ សុខមាន</h5>
+                                <a href="#" class="text-white Kantumruy">Web designer</a>
+                            </div>
+
+                        </div>
+                        <div class="card-footer">
+                            <ul class="wrapper d-flex justify-content-center p-0 m-1">
+                                <li class="icon facebook">
+                                    <span><i class="fab fa-facebook-f"></i></span>
+                                </li>
+                                <li class="icon twitter">
+                                    <span><i class="fab fa-twitter"></i></span>
+                                </li>
+                                <li class="icon instagram">
+                                    <span><i class="fab fa-instagram"></i></span>
+                                </li>
+                                <li class="icon github">
+                                    <span><i class="fab fa-github"></i></span>
+                                </li>
+                                <li class="icon youtube">
+                                    <span><i class="fab fa-youtube"></i></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer" class="footer">
+
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="d-flex align-items-center">
+                        <img src="./assets/images/hmp-tour-high-resolution-logo-transparent.png" width="150" alt="">
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>ទួលគោក​​​ ភ្នំពេញ </p>
+  
+                        <p ><strong>លេខទូរស័ព្ទ:</strong> <span><a href="tel:015 758787" class=" fs-6 text-decoration-none">០15758787</a></span></p>
+                        <p><strong>អុីម៉េល:</strong> <span><a href="mailto:tityapong77@gmail.com" class="text-decoration-none fs-6">tityapong77@gmail.com</a></span></p>
+                        <!-- <a href="kansokmean006@gmail.com">send email</a> -->
+                        <!-- <p class="x"><a href="mailto:tityapong77@gmail.com">tityapong77@gmail.com</a></p> -->
+                    </div>
+                </div>
+  
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>តំណ​ភ្ជាប់​ដែល​មានប្រយោជន៍</h4>
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./Home.html">ទំព័រដើម</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./about_page.html">អំពីយើង</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./service.html">សេវាកម្ម</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./kampot.html">ដំណើរកំសាន្ត</a></li>
+                    </ul>
+                </div>
+  
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>សេវាកម្មរបស់យើង</h4>
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./restaurants.html">ម្ហូបអាហារ</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./hotel.html">ប្រភេទនៃបន្ទប់</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./gym.html">ស្ប៉ា និងកន្លែងហាត់ប្រាណ</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./service.html">សុវត្ថិភាព និងកន្លែងស្អាត</a>
+                        </li>
+                    </ul>
+                </div>
+  
+                <div class="col-lg-4 col-md-6">
+                    <h4>បណ្តាញសង្គម</h4>
+                    <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
+                    <div class="social-links d-flex">
+                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100041282045035&mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+  
+                    <h4 class="mt-4">ការទូទាត់ និងសុវត្ថិភាព</h4>
+                    <div class="payment-card d-flex gap-2 ">
+                        <img src="./assets/images/credit-card.svg" width="50px" alt="">
+                        <img src="./assets/images/mastercard.svg" width="40px" alt="">
+                        <img src="./assets/images/paypal.svg" width="40px" alt="">
+                        <img src="./assets/images/visa.svg" width="40px" alt="">
+                    </div>
+  
+                </div>
+  
+            </div>
+        </div>
+  
+        <div class="container copyright text-center mt-4">
+  
+            <p><strong>រក្សាសិទ្ធដោយក្រុមទី5</strong></p>
+        </div>
+  
+    </footer>
+  
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top  d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+</body>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+
+
+
+
+
+<script src="./assets/js/darkmode.js"></script>
+<script src="./assets/js/scrool.js"></script>
+
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+</html>

@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./assets/styles/bootstrap.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/vendor/aos/aos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>restaurant_page</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/ant-logo.jpg">
+
+
+</head>
+
+<body class="restaurant">
+    <header>
+        <nav id="nav-scroll" class="navbar  navbar-expand-lg fixed-top bg-transparent">
+            <div class="container">
+                <a class="navbar-brand me-auto  mb-2" href="./Home.html">
+
+                    <img src="./assets/images/hmp-tour-high-resolution-logo-transparent.png" width="170px" alt="">
+
+                </a>
+                <button class="navbar-toggler mt-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <i class="  bi bi-list toggle-sidebar-btn"></i>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title " id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-closecanvas ms-auto" data-bs-dismiss="offcanvas">
+
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <ul class="navbar-nav  justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link  mx-lg-2" aria-current="page" href="./Home.html">ទំព័រដើម</a>
+                            </li>
+
+                            <li class="sub-dropdown  nav-item   ms-lg-3 position-relative" aria-current="page">
+                                <a href="#" class="text-decoration-none text-dropdown nav-link active-page">
+                                    <span class=" ">សេវាកម្ម</span> <i
+                                        class="bi bi-chevron-down toggle-dropdown  "></i></a>
+                                <ul class="sub-nav ">
+                                    <li><a href="./restaurants.html">ម្ហូបអាហារ</a></li>
+
+                                    <li><a href="./hotel.html">ប្រភេទនៃបន្ទប់</a></li>
+                                    <li><a href="./gym.html">ស្ប៉ា និងកន្លែងហាត់ប្រាណ</a></li>
+
+                                    <li><a href="./service.html">សុវត្ថិភាព និងកន្លែងស្អាត</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="./hotel.html">សណ្ឋាគារ</a>
+                            </li>
+
+                            <li class="sub-dropdown  nav-item   ms-lg-3 position-relative">
+                                <a href="#" class="text-decoration-none text-dropdown nav-link"><span
+                                        class=" ">កន្លែងកម្សាន្ត</span> <i
+                                        class="bi bi-chevron-down toggle-dropdown  "></i></a>
+                                <ul class="sub-nav  ">
+                                    <li><a href="./pp.html">ភ្នំពេញ</a></li>
+                                    <li><a href="./siem_reap.html">សៀមរាប</a></li>
+
+                                    <li><a href="./kampot.html">កំពត</a></li>
+                                    <li><a href="./kep.html">កែប</a></li>
+
+                                    <li><a href="./kps.html">កំពង់សោម</a></li>
+                                    <li><a href="./koh_kong.html">កោះកុង</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="sub-dropdown nav-item  ms-lg-4 position-relative">
+                                <a href="#" class="text-decoration-none nav-link text-dropdown"><span
+                                        class=" ">ផ្សេងៗ</span> <i class="bi bi-chevron-down toggle-dropdown  "></i></a>
+                                <ul class="sub-nav  ">
+                                    <li><a href="./about_page.html">អំពីយើង</a></li>
+                                    <li><a href="./contact.html">ទំនាក់ទំនង</a></li>
+                                    <li><a href="./blog-detail.html">ប្លុក</a></li>
+                               
+                                    <li><a href="./faq.html">FAQ</a></li>
+                                    <li><a href="./coming.html">ឆាប់ៗនេះ</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social">
+                    <nav class="header-nav ms-auto ">
+                        <ul class="d-flex align-items-center">
+
+                            <li>
+                                <button type="button" class=" btn btn-mode d-lg-block me-3"
+                                    aria-label="Change to light theme" data-theme-toggle> <i
+                                        class="fa-regular fa-moon"></i></button>
+
+                            </li>
+
+
+                            <li class=" dropdown">
+
+                                <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                                    <i class="bi bi-bell"></i>
+                                    <span class="badge   bg-danger badge-number">3</span>
+                                </a><!-- End Notification Icon -->
+
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications ">
+                                    <li class="dropdown-header">
+                                        អ្នកមានការជូនដំណឹងថ្មីចំនួន3
+                                        <a href="#"><span class="badge rounded-pill view-all p-2 ms-2">
+                                                មើលទាំងអស់
+                                            </span></a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li class="notification-item">
+                                        <!-- <i class="bi bi-exclamation-circle text-warning"></i> -->
+                                        <img src="./assets/images/globe-showing-asia-australia.svg" width="35px" alt="">
+                                        <div>
+                                            <h4>ដំណើរកំសាន្ត</h4>
+                                            <p>ស្វែងរកទីកន្លែងថ្មីជាមួយនឹងដំណើរកម្សាន្តនាពេលខាងមុខរបស់យើង!
+                                                កុំខកខានបទពិសោធន៍ដែលមិនអាចបំភ្លេចបាន និងគោលដៅដ៏អស្ចារ្យ។</p>
+                                            <p>30 min. ago</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li class="notification-item">
+                                        <!-- <i class="bi bi-x-circle text-danger"></i> -->
+                                        <img src="./assets/images/glowing-star.svg" width="35px" alt="">
+                                        <div>
+                                            <h4>ការបញ្ចុះតម្លៃ</h4>
+                                            <p>ការផ្តល់ជូនពេលវេលាមានកំណត់! រីករាយជាមួយការបញ្ចុះតម្លៃ 30%
+                                                លើដំណើរកម្សាន្តដ៏រំភើបរបស់យើង។
+                                                កុំ​ឲ្យ​ឱកាស​នេះ​កន្លង​ផុត​ទៅ​ដើម្បី​ស្វែង​យល់​ពី​កន្លែងកម្សាន្ត​ក្នុង​តម្លៃ​តិច!
+                                            </p>
+                                            <p>1 hr. ago</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li class="notification-item">
+                                        <i class="bi bi-check-circle text-success"></i>
+                                        <div>
+                                            <h4>សេវាកម្មនិងទំនុកចិត្ត</h4>
+                                            <p>.ការធ្វើដំណើរដែលបានគ្រោងទុកយ៉ាងល្អិតល្អន់
+                                                និងមគ្គុទ្ទេសក៍ដែលមានចំណេះដឹងដល់ការដឹកជញ្ជូនប្រកបដោយផាសុកភាព
+                                                និងការអត្ថាធិប្បាយប្រកបដោយការយល់ដឹង
+                                                យើងធានាថាគ្រប់ទិដ្ឋភាពនៃការធ្វើដំណើររបស់អ្នកត្រូវបានយកចិត្តទុកដាក់។</p>
+                                            <p>2 hrs. ago</p>
+                                        </div>
+                                    </li>
+
+
+
+                                </ul>
+                                <!-- End Notification Dropdown Items -->
+
+                            </li>
+                            <li class=" dropdown pe-3">
+
+                                <a class="nav-link nav-profile d-flex align-items-center img-fluid pe-0" href="#"
+                                    data-bs-toggle="dropdown">
+                                    <img src="./assets/images/photo_2023-08-11 12.02.31.jpeg" alt="Profile"
+                                        class="rounded-circle">
+                                    <span class="d-none d-md-block dropdown-toggle ps-2 Dangrek">ទិត្យាពង្ស</span>
+                                </a><!-- End Profile Iamge Icon -->
+
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                                    <li class="dropdown-header">
+                                        <h6 class="Kantumruy">ទិត្យាពង្ស</h6>
+
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="./Profile.html">
+                                            <i class="bi bi-person"></i>
+                                            <span>ប្រវត្តរូប</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="./wish.html">
+                                            <i class="bi bi-bag-heart-fill me-2"></i>
+                                            <span>ចំណង់ចំណូលចិត្ត</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="./hisoty-book.html">
+                                            <i class="bi bi-clock-history me-2"></i>
+                                            <span>ប្រវត្តនៃការកក់</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="./index.html">
+                                            <i class="bi bi-box-arrow-right me-2"></i>
+                                            <span>ចាកចេញ</span>
+                                        </a>
+                                    </li>
+
+                                </ul><!-- End Profile Dropdown Items -->
+                            </li>
+
+                            <!-- End Profile Nav -->
+
+                        </ul>
+                    </nav>
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--------------------------------Food--------------------------------->
+
+    <main>
+        <div id="container-text" class="my Kantumruy">
+            <div class="bot Kantumruy"></div>
+        </div>
+        <br> <br>
+
+        <section id="about" class="overflow-hidden">
+            <div class="about-wrapper container g-2">
+                <div class="about-text">
+                    <!-- <p class="small">អំពីអាហាររបស់ពួកយើង</p> -->
+                    <h1>អំពីអាហារក្នុងសណ្ឋាគាររបស់ពួកយើង</h1>
+                    <br>
+                    <p>
+                        មុខម្ហូបរបស់សណ្ឋាគារយើងខ្ញុំបានយកចិត្តទុកដាក់ចំពោះភ្ញៀវនិងអតិថិជនដែលមានម្ហូបបែបខ្មែរពិតប្រាកដ
+                        ដែលមាននូវឱជារស អនាម័យ និងតម្លៃសមរម្យ
+                        ភាពប្រណិតនិងទំនើបរបស់សណ្ឋាគារបានបង្ហាញអំពីស្នាដៃសិល្បៈដើមដ៏ស្រស់ស្អាត ។
+                    </p>
+                    <!-- <p></p> -->
+                </div>
+
+                <div class=" col-6 about-img ">
+                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active  " data-bs-interval="2200">
+                                <img src="https://i.ytimg.com/vi/FcMGJGvOBcI/maxresdefault.jpg" class="d-block w-100 "
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item " data-bs-interval="2200">
+                                <img src="https://i.ytimg.com/vi/FcMGJGvOBcI/maxresdefault.jpg" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="1800">
+                                <img src="https://i.ytimg.com/vi/FcMGJGvOBcI/maxresdefault.jpg" class="d-block w-100"
+                                    alt="...">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!----------------------------kind of food------------------------------------>
+
+
+        <section class="kind-food my-5">
+            <h1 id="title" class="text-center Dangrek">ប្រភេទម្ហូបខ្មែរ</h1>
+            <p id="description" class="text-center py-3 ">
+                ចាប់ផ្ដើមថ្ងៃថ្មីរបស់អ្នកជាមួយអាហារពេលព្រឹកដ៏ស្រស់ស្រាយពីសណ្ឋាគារយើងខ្ញុំ។ <br> ពិសារអាហារដ៏ឈ្ងុយឆ្ងាញ់
+                ដែលចម្អិនដោយចុងភៅជំនាញៗប្រចាំសណ្ឋាគារ ជាមួយបរិយាកាសស្ងប់ស្ងាត់ និងប្រកបដោយសុវត្ថិភាព!
+            </p>
+        </section>
+
+        <!--------------------------kind-of-food--------------------------------------->
+        <!----------------------------------------------------------------------------->
+        <div class="container  overflow-hidden">
+            <div class="row mt-5">
+
+                <div class="col-lg-4 align-items-stretch d-flex">
+
+                    <div class="card shadow " data-aos="zoom-in-down" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="600">
+                        <div class="card-img-top-overlay">
+                            <div class="overlay"></div>
+                            <span class="bg-secondary card-badge text-white top-right">បញ្ចុះ5% </span>
+                            <div class="position-relative">
+                                <img alt="" class="card-img-top img-same-height" src="./assets/images/z7wm-listing.jpg">
+                                <div class="shape text-white bottom">
+
+                                    <svg width="528px" height="40px" viewBox="0 0 528 40" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="shape" transform="matrix(-1.138336E-07 -1 1 -1.138336E-07 0 39.92764)">
+                                            <path
+                                                d="M0 0L40.5467 0C40.5467 0 -31.8215 230.87 38.7134 528.217C39.8794 533.133 31.7549 527.502 31.0925 528.75C28.7914 533.084 26.1543 528.191 24.4327 529.178C59.2372 539.206 14.0091 521.981 12.9329 530.001L1.02722 528.284L0 0Z"
+                                                transform="translate(7.629395E-06 6.103516E-05)" fill="currentColor"
+                                                stroke="none"></path>
+                                        </g>
+                                    </svg>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="mt-2">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <p class="mb-0"><span class=" align-middle">ពីម៉ោង៖ 6:30 ព្រឹក - 9:30
+                                                ព្រឹក</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2">
+                                <h4 class=" fs-3 Dangrek">អាហារពេលព្រឹក</h4>
+                                <p class="text-muted mb-2">
+                                    ភ្ញៀវអាចជ្រើសជម្រើសអាហារពេលព្រឹកជាច្រើនជម្រើស។
+                                    ម្ហូបទាំងនោះរួមមានដូចជា អាហារពេលព្រឹកបែបអាមេរិក ដែលមានបន្លែ និងផ្លែឈើ
+                                    ឬអាហារពេលព្រឹកបែបអាស៊ី ដែលមានផ្លែឈើដូចគ្នា ចំណែកភេសជ្ជៈ
+                                    និងទឹកផ្លែឈើក៏មានរួមបញ្ចូលក្នុងនោះដែរ។
+                                </p>
+                                <a class="btn-outline-primary btn" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#foodtime" role="button">អានបន្ថែម</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 align-items-stretch d-flex">
+                    <div class="card shadow" data-aos="zoom-in-down" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="600">
+                        <div class="card-img-top-overlay">
+                            <div class="overlay"></div>
+                            <span class="bg-secondary card-badge text-white top-right">បញ្ចុះ5% </span>
+                            <div class="position-relative"><img alt="" class="card-img-top img-same-height"
+                                    src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/07/6c/43/combination-broken-rice.jpg?w=600&h=-1&s=1">
+                                <div class="shape text-white bottom"><svg width="528px" height="40px"
+                                        viewBox="0 0 528 40" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <g id="shape1" transform="matrix(-1.138336E-07 -1 1 -1.138336E-07 0 39.92764)">
+                                            <path
+                                                d="M0 0L40.5467 0C40.5467 0 -31.8215 230.87 38.7134 528.217C39.8794 533.133 31.7549 527.502 31.0925 528.75C28.7914 533.084 26.1543 528.191 24.4327 529.178C59.2372 539.206 14.0091 521.981 12.9329 530.001L1.02722 528.284L0 0Z"
+                                                transform="translate(7.629395E-06 6.103516E-05)" fill="currentColor"
+                                                stroke="none"></path>
+                                        </g>
+                                    </svg></div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="mt-2">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <p class="mb-0"><span class=" align-middle">ពីម៉ោង៖ 11:30 ព្រឹក - 2:00
+                                                រសៀល</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2">
+                                <h4 class=" fs-3 Dangrek">អាហារពេលថ្ងៃ</h4>
+                                <p class="text-muted" style="margin-bottom: 80px;">
+                                    សម្រាប់អាហារថ្ងៃត្រង់ផ្តល់ជូននូវជម្រើសជាច្រើន
+                                    ម្ហូបបែបខ្មែរដូចជា ហហ្មុក នំបញ្ចុក សម្លកកូរ ទឹកគ្រឿង ត្រីប្រមាចំហុយ...។
+                                </p>
+                                <a class="btn-outline-primary btn" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#foodtime" role="button">អានបន្ថែម</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 align-items-stretch d-flex">
+                    <div class="card shadow" data-aos="zoom-in-down" data-aos-easing="ease-out-cubic"
+                        data-aos-duration="600">
+                        <div class="card-img-top-overlay">
+                            <div class="overlay"></div>
+                            <span class="bg-secondary card-badge text-white top-right">បញ្ចុះ5%</span>
+                            <div class="position-relative"><img alt="" class="card-img-top img-same-height"
+                                    src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjI-RS4i973CHCrKgx0dGus6Vl_aVOYTPb-MThvw3qL8kue3pcHt666u4vVF2sv9ryYc1JXL5w5P4vZLF7ts9NAmWCgbHu8jYc8fQ6krOXu4HpLoMIB0FJjJbL2fdHNfbRKt9O2p0B2-Fw/s1600/20121224_113515.jpg">
+                                <div class="shape text-white bottom">
+                                    <svg width="528px" height="40px" viewBox="0 0 528 40" version="1.1"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+                                        <g id="shape2" transform="matrix(-1.138336E-07 -1 1 -1.138336E-07 0 39.92764)">
+                                            <path
+                                                d="M0 0L40.5467 0C40.5467 0 -31.8215 230.87 38.7134 528.217C39.8794 533.133 31.7549 527.502 31.0925 528.75C28.7914 533.084 26.1543 528.191 24.4327 529.178C59.2372 539.206 14.0091 521.981 12.9329 530.001L1.02722 528.284L0 0Z"
+                                                transform="translate(7.629395E-06 6.103516E-05)" fill="currentColor"
+                                                stroke="none"></path>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="mt-2">
+                                <div class="row align-items-center">
+                                    <div class="col-auto">
+                                        <p class="mb-0"><span class="align-middle">ពីម៉ោង៖ 5:00 ល្ងាច - 10:00 យប់</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-2">
+                                <h4 class=" fs-3 Dangrek">អាហារពេលយប់</h4>
+                                <p class="text-muted mb-2">
+                                    សណ្ឋាគារយើងខ្ញុំបានផ្តល់ជូននូវបទពិសោធទទួលទានអាហារដ៏ឆ្ងាញ់ពិសាទាំងពេលព្រឹក ថ្ងៃ និង
+                                    ពេលយប់ មិនថាម្ហូបអន្តរជាតិ និងម្ហូបជាតិ ។
+                                    បម្រើជូនលោកអ្នកនៅក្នុងបរិយាកាសដ៏ស្ងប់ស្ងាត់លំហែកាយដែលអាចផ្តល់ជូនលោកអ្នកនូវបទពិសោធន៍ទទួលទានអាហារបែបខ្មែរល្អឥតខ្ចោះផ្ទាល់ខ្លួនបានរៀងៗខ្លួន។
+                                </p>
+                                <a class="btn-outline-primary btn" href="#" data-bs-toggle="modal"
+                                    data-bs-target="#foodtime" role="button">អានបន្ថែម</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <section class="mb-5 overflow-hidden">
+            <h1 class="text-center mt-5 Dangrek">ម្ហូបពេញនិយមបំផុត</h1>
+            <div class="container m-auto">
+                <div class="row mt-5">
+                    <div class=" col-12">
+                        <div class="preview-card " data-aos="fade-left">
+
+                            <div class="preview-card__wrp ">
+                                <div class="preview-card__item ">
+                                    <div class="preview-card__img ">
+                                        <img src="https://khmernote.com.kh/wp-content/uploads/2022/08/sp44-2.jpg"
+                                            alt="">
+                                    </div>
+                                    <div class="preview-card__content">
+                                        <div class="preview-card__title fs-2 Dangrek">ហហ្មុក</div>
+                                        <div class="preview-card__text">ម្ហូបមួយមុខនេះ ជាការផ្សំបញ្ចូលគ្នារវាងគ្រឿងការី
+                                            សាច់ត្រី ខ្ទិះដូង ប្រហុក ស្លឹកញ គ្រឿងទេសផ្សេងៗ ព្រមទាំងអប់ដោយស្លឹកចេក។</div>
+                                        <a href="#" class="preview-card__button " data-bs-toggle="modal"
+                                            data-bs-target="#foodModal" role="button">អានបន្ថែម</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col-12">
+                        <div class="preview-card" data-aos="fade-left">
+
+                            <div class="preview-card__wrp">
+                                <div class="preview-card__item">
+                                    <div class="preview-card__img">
+                                        <img src="./assets/images/2.jpg" alt="">
+                                    </div>
+                                    <div class="preview-card__content">
+                                        <!-- <span class="preview-card__code">26 December 2019</span> -->
+                                        <div class="preview-card__title fs-3 Dangrek">នំបញ្ចុក</div>
+                                        <div class="preview-card__text">អាហារមួយមុខនេះក៏ល្បីល្បាញផងដែរ
+                                            ដែលត្រូវបានផលិតចេញពីអង្គរ។ អាហារពេញនិយមមួយមុខនេះ
+                                            ទេសចរមកកាន់កម្ពុជាមិនដែលរំលងឡើយ ហើយក៏អាចបរិភោគជំនួសបាយម្ដងម្កាលដែរ។
+                                        </div>
+                                        <a href="#" class="preview-card__button" data-bs-toggle="modal"
+                                            data-bs-target="#foodModal" role="button">អានបន្ថែម</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class=" col-12">
+                        <div class="preview-card" data-aos="fade-left">
+                            <div class="preview-card__wrp">
+                                <div class="preview-card__item">
+                                    <div class="preview-card__img">
+                                        <img src="./assets/images/3.jpg" alt="">
+                                    </div>
+                                    <div class="preview-card__content">
+                                        <!-- <span class="preview-card__code">26 December 2019</span> -->
+                                        <div class="preview-card__title fs-3 Dangrek">សម្លកកូរ</div>
+                                        <div class="preview-card__text">ជាប្រភេទសម្ល ដែលសម្បូរប្រូតេអ៊ីន
+                                            ដោយសារសម្បូរដោយបន្លែចម្រុះច្រើនមុខ។ សម្លមួយមុខនេះ អាចមានបន្លែជាង១០មុខ រួមមាន
+                                            ល្ពៅ ខ្នុរខ្ចី ចេកខ្ចី ម្រះ សណ្ដែកទ្រើង ល្ហុង ត្រប់ ម្រុម អង្គាដី បាស
+                                            និងផ្ទីជាដើម។ </div>
+                                        <a href="#" class="preview-card__button" data-bs-toggle="modal"
+                                            data-bs-target="#foodModal" role="button">អានបន្ថែម</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class=" col-12">
+                        <div class="preview-card" data-aos="fade-left">
+                            <div class="preview-card__wrp">
+                                <div class="preview-card__item">
+                                    <div class="preview-card__img">
+                                        <img src="./assets/images/4.jpg" alt="">
+                                    </div>
+                                    <div class="preview-card__content">
+                                        <!-- <span class="preview-card__code">26 December 2019</span> -->
+                                        <div class="preview-card__title fs-3 Dangrek">ទឹកគ្រឿង</div>
+                                        <div class="preview-card__text">ជាម្ហូបពេញនិយមមួយមុខទៀត ដែលពលរដ្ឋខ្មែរ
+                                            ក៏ដូចបរទេស ចូលចិត្តទទួលទាន។ ទឹកគ្រឿងត្រូវបានផ្សំឡើងដោយ សាច់ត្រី ប្រហុក
+                                            និងគ្រឿងទេស។</div>
+                                        <a href="#" class="preview-card__button" data-bs-toggle="modal"
+                                            data-bs-target="#foodModal" role="button">អានបន្ថែម</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col-12">
+                        <div class="preview-card" data-aos="fade-left">
+                            <div class="preview-card__wrp">
+                                <div class="preview-card__item">
+                                    <div class="preview-card__img">
+                                        <img src="./assets/images/5.jpg" alt="">
+                                    </div>
+                                    <div class="preview-card__content">
+                                        <!-- <span class="preview-card__code">26 December 2019</span> -->
+                                        <div class="preview-card__title fs-3   Dangrek">ត្រីប្រមាចំហុយ</div>
+                                        <div class="preview-card__text">ត្រីប្រមាចំហុយ មិនមែនជាមុខម្ហូបប្រពៃណីឡើយ
+                                            ប៉ុន្តែម្ហូបមួយមុខនេះពេញនិយម នាពេលបច្ចុប្បន្ន។ ម្ហូបមួយមុខនេះ
+                                            គ្រឿងផ្សំសំខាន់គឺត្រីប្រមា សាច់ជ្រូកចិញ្ច្រាំ ស៊ុត រួមនឹងគ្រឿងទេសដទៃទៀត។
+                                        </div>
+                                        <a href="#" class="preview-card__button" data-bs-toggle="modal"
+                                            data-bs-target="#foodModal" role="button">អានបន្ថែម</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class=" col-12">
+                        <div class="preview-card" data-aos="fade-left">
+                            <div class="preview-card__wrp">
+                                <div class="preview-card__item">
+                                    <div class="preview-card__img">
+                                        <img src="./assets/images/៦.jpg" alt="">
+                                    </div>
+                                    <div class="preview-card__content">
+                                        <!-- <span class="preview-card__code">26 December 2019</span> -->
+                                        <div class="preview-card__title fs-3   Dangrek">ត្រីអាំង</div>
+                                        <div class="preview-card__text">
+                                            នៅ​ថ្ងៃ​នេះ​យើងខ្ញុំមាន​មុខ​ម្ហូប​ទៀត​ដែល​មាន​ឈ្មោះ​ថា
+                                            ត្រី​ចំហុយ​ទឹក​ស៊ីអ៊ីវ​ជា​មួយ​គល់​ខ្ទឹម
+                                            មក​បង្ហាញ​ជូន​ដល់​ស្រីៗ​មេផ្ទះ​គ្រប់​រូប។ មុននឹង​ធ្វើ​ម្ហូប​មួយ​មុខ​នេះ
+                                            ប្រិយ​មិត្ត​ត្រូវរក​គ្រឿង​ផ្សំ
+                                            ឲ្យ​គ្រប់​ទើប​ធ្វើ​ឲ្យ​ម្ហូប​កាន់តែ​មាន​រស់​ជាតិ​ឈ្ងុយ​ឆ្ងាញ់។</div>
+                                        <a href="#" class="preview-card__button" data-bs-toggle="modal"
+                                            data-bs-target="#foodModal" role="button">អានបន្ថែម</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        
+    </main>
+    <!-- -----modal----- -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="foodModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 Dangrek ms-3" id="exampleModalLabel">មុខម្ហូប៖​ ហហ្មុក</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <img src="./assets/images/ahmok.jpg" class="w-100" alt="">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p> &nbsp; &nbsp; &nbsp; &nbsp;ជាម្ហូបដែលពេញនិយមបំផុត វាមានឈ្មោះដើមថា អាម៉ុក ប្រែមកជា
+                                «​ហហ្មុក​»​
+                                ​គឺជា​មុខម្ហូប​ដែល​ប្រជាជន​ខ្មែរយើង​តែង​និយម​ប្រាប់​ទៅកាន់​បរទេស​ថា​ជា​ម្ហូប​តំណាង​ជាតិ​។​
+                                ​តាម​ការសង្កេត​ ​យើង​ឃើញ​ថា​
+                                ​មុខម្ហូប​នេះ​ត្រូវ​បាន​គេ​លើក​តម្កើង​ជាងគេ​ក្នុងចំណោម​មុខម្ហូប​នានា​ក្នុង​សង្គម​ខ្មែរ​។​
+                                ​ជាក់ស្តែង​ ​យើង​មិនសូវ​ឃើញ​មាន​គេ​ធ្វើ​លក់​នៅ​តាម​ទី​សាធារណៈ​
+                                ​ឬ​តាម​តូប​បាយ​តូចតាច​នោះ​ទេ​ ​ភាគច្រើន​មាន​លក់​តែ​ក្នុង​អាហារដ្ឋាន​
+                                ​ឬ​ភោជនីយដ្ឋាន​ធំ​ៗ​លក្ខណៈ​ជាតិ​ ​និង​អន្តរជាតិ​តែប៉ុណ្ណោះ​។​ ​លើស​ពីនេះទៅ​ទៀត​
+                                ​ហហ្មុក​ ​ក៏​ជា​មុខម្ហូប​មួយ​ដែល​ជួយ​ទាក់ទាញ​ភ្ញៀវ​ទេសចរ​ ​ពិសេស​ភ្ញៀវ​បរទេស​តែម្តង​
+                                ​ដែល​ជា​ផ្នែក​មួយ​ជួយ​ដល់​ការ​អភិវឌ្ឍ​វិ​ស​័​យ​ទេសចរណ៍​ក្នុងស្រុក​ផង​ដែរ​។</p>
+                        </div>
+                        <div class="col-12">
+                            <ul class="d-flex justify-content-around">
+                                <li> ជាម្ហូបខ្មែរ</li>
+                                <li> ចម្អិនដោយស្នាដៃកូនខ្មែរ</li>
+                                <li> មានរស់ជាតិឆ្ងាញ់</li>
+                                <li> មានការគាំទ្រច្រើនជាងគេ</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="foodtime" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-4 Dangrek ms-3" id="exampleModalLabel1">មុខម្ហូបប្លែកៗសម្បូរបែប</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <img src="./assets/images/specials-1.jpg" class="w-100" alt="">
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p>&nbsp; &nbsp; &nbsp; &nbsp; ខាងសណ្ឋាគារពួកយើងមានសេវាកម្មអាហារ
+                                ជូនភ្ញៀវផងដែរជាមួយហ្នឹងមុខម្ហូបជាច្រើន ចម្អិនដោយស្នាដៃកូនខ្មែរ
+                                ផ្តល់ជូននូវជម្រើសនៃការទទួលទានអាហារជាច្រើនប្រភេទដល់ភ្ញៀវ ដូចជាភោជនីយដ្ឋាន សេវាបន្ទប់
+                                និងការផ្តល់ម្ហូបអាហារសម្រាប់ព្រឹត្តិការណ៍ផ្សេងៗ។
+                                សេវាកម្មនេះមានគោលបំណងផ្តល់នូវអាហារដែលមានគុណភាពខ្ពស់
+                                ដែលជារឿយៗត្រូវបានរៀបចំដោយមេចុងភៅជំនាញក្នុងបរិយាកាសទទួលទានអាហារដ៏រីករាយ។ </p>
+                            <ul class="liststyle-modal">
+                                <li> ជាម្ហូបខ្មែរ</li>
+                                <li> ចម្អិនដោយស្នាដៃកូនខ្មែរ</li>
+                                <li> មានរស់ជាតិឆ្ងាញ់</li>
+                                <li> មានការគាំទ្រច្រើនជាងគេ</li>
+                            </ul>
+                            <ul class="list-unstyled">
+                                <li><span class="Kantumruy fw-medium text-primary">អាហារពេលព្រឺកពីម៉ោង៖</span> 6:30- 9:30ព្រឹក</li>
+                                <li><span class="Kantumruy fw-medium text-primary">អាហារពេលថ្ងៃពីម៉ោង៖</span> 11:30- 2:00រសៀល</li>
+                                <li><span class="Kantumruy fw-medium text-primary">អាហារពេលល្ងាចពីម៉ោង៖</span> 5:00- 10:00យប់</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer id="footer" class="footer">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="d-flex align-items-center">
+                        <img src="./assets/images/hmp-tour-high-resolution-logo-transparent.png" width="150" alt="">
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>ទួលគោក​​​ ភ្នំពេញ </p>
+  
+                        <p ><strong>លេខទូរស័ព្ទ:</strong> <span><a href="tel:015 758787" class=" fs-6 text-decoration-none">០15758787</a></span></p>
+                        <p><strong>អុីម៉េល:</strong> <span><a href="mailto:tityapong77@gmail.com" class="text-decoration-none fs-6">tityapong77@gmail.com</a></span></p>
+                        <!-- <a href="kansokmean006@gmail.com">send email</a> -->
+                        <!-- <p class="x"><a href="mailto:tityapong77@gmail.com">tityapong77@gmail.com</a></p> -->
+                    </div>
+                </div>
+  
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>តំណ​ភ្ជាប់​ដែល​មានប្រយោជន៍</h4>
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./Home.html">ទំព័រដើម</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./about_page.html">អំពីយើង</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./service.html">សេវាកម្ម</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./kampot.html">ដំណើរកំសាន្ត</a></li>
+                    </ul>
+                </div>
+  
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>សេវាកម្មរបស់យើង</h4>
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./restaurants.html">ម្ហូបអាហារ</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./hotel.html">ប្រភេទនៃបន្ទប់</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./gym.html">ស្ប៉ា និងកន្លែងហាត់ប្រាណ</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./service.html">សុវត្ថិភាព និងកន្លែងស្អាត</a>
+                        </li>
+                    </ul>
+                </div>
+  
+                <div class="col-lg-4 col-md-6">
+                    <h4>បណ្តាញសង្គម</h4>
+                    <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
+                    <div class="social-links d-flex">
+                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100041282045035&mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+  
+                    <h4 class="mt-4">ការទូទាត់ និងសុវត្ថិភាព</h4>
+                    <div class="payment-card d-flex gap-2 ">
+                        <img src="./assets/images/credit-card.svg" width="50px" alt="">
+                        <img src="./assets/images/mastercard.svg" width="40px" alt="">
+                        <img src="./assets/images/paypal.svg" width="40px" alt="">
+                        <img src="./assets/images/visa.svg" width="40px" alt="">
+                    </div>
+  
+                </div>
+  
+            </div>
+        </div>
+  
+        <div class="container copyright text-center mt-4">
+  
+            <p><strong>រក្សាសិទ្ធដោយក្រុមទី5</strong></p>
+        </div>
+  
+    </footer>
+  
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top  d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+</body>
+<script src="./assets/vendor/aos/aos.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+
+<script src="./assets/js/darkmode.js"></script>
+<script src="./assets/js/scrool.js"></script>
+<!-- <script src="./assets/js/main.js"></script> -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    const properties = ["សូមស្វាគមន៍", "WELCOME"];
+    const bgColor = [];
+    const fontSize = ["70px", "70px"];
+    const fonts = ["'Dangrek', Dangrek", "'Dangrek', Dangrek "];
+
+    let arrayIndex = 0;
+    let arrayElementIndex = 0;
+
+    const container = document.querySelector("#container-text");
+    const body = document.querySelector("body");
+
+    autoTextEffectFun();
+
+    function autoTextEffectFun() {
+        arrayElementIndex++;
+
+        container.innerHTML = `<h2 style="font-size: ${fontSize[arrayIndex]}; font-family: ${fonts[arrayIndex]}"> 
+        ${properties[arrayIndex].slice(0, arrayElementIndex)}
+    </h2>`;
+
+        body.style.backgroundColor = bgColor[arrayIndex];
+
+        if (arrayElementIndex === properties[arrayIndex].length) {
+            arrayIndex++;
+            arrayElementIndex = 0;
+        }
+
+        if (arrayIndex === properties.length) {
+            arrayIndex = 0;
+        }
+
+        setTimeout(autoTextEffectFun, 400);
+    }
+
+</script>
+
+
+<script>
+    AOS.init();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</html>

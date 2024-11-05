@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>--service_page--</title>
+    <link rel="stylesheet" href="./assets/styles/bootstrap.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+
+    <link rel="stylesheet" href="./assets/styles/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+
+<body>
+    <header>
+        <nav id="nav-scroll" class="navbar navbar-expand-lg fixed-top">
+            <div class="container">
+                <a class="navbar-brand me-auto  mb-2" href="#">
+
+                    <img src="./assets/images/hmp-tour-high-resolution-logo-transparent.png" width="170px" alt="">
+
+                </a>
+                <button class="navbar-toggler mt-2" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <i class="  bi bi-list toggle-sidebar-btn"></i>
+                </button>
+
+
+
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title " id="offcanvasNavbarLabel">Offcanvas</h5>
+                        <button type="button" class="btn-closecanvas ms-auto" data-bs-dismiss="offcanvas">
+
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                    </div>
+                    <div class="offcanvas-body ">
+                        <ul class="navbar-nav  justify-content-center flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" aria-current="page" href="Home.html">ទំព័រដើម</a>
+                            </li>
+
+                            <li class="sub-dropdown  nav-item   ms-lg-3 position-relative">
+                                <a href="#" class="text-decoration-none active-page text-dropdown nav-link"><span
+                                        class=" ">សេវាកម្ម</span> <i
+                                        class="bi bi-chevron-down toggle-dropdown  "></i></a>
+                                <ul class="sub-nav ">
+                                    <li><a href="restaurants.html">ម្ហូបអាហារ</a></li>
+
+                                    <li><a href="hotel.html#typeroom" smooth>ប្រភេទនៃបន្ទប់</a></li>
+                                    <li><a href="gym.html">ស្ប៉ា និងកន្លែងហាត់ប្រាណ</a></li>
+
+                                    <li><a href="#">សុវត្ថិភាព និងកន្លែងស្អាត</a></li>
+
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2 " href="hotel.html">សណ្ឋាគារ</a>
+                            </li>
+
+                            <li class="sub-dropdown  nav-item   ms-lg-3 position-relative">
+                                <a href="#" class="text-decoration-none text-dropdown nav-link"><span
+                                        class=" ">កន្លែងកម្សាន្ត</span> <i
+                                        class="bi bi-chevron-down toggle-dropdown  "></i></a>
+                                        <ul class="sub-nav  ">
+                                            <li><a href="./pp.html">ភ្នំពេញ</a></li>
+                                            <li><a href="./siem_reap.html">សៀមរាប</a></li>
+        
+                                            <li><a href="./kampot.html">កំពត</a></li>
+                                            <li><a href="./kep.html">កែប</a></li>
+        
+                                            <li><a href="./kps.html">កំពង់សោម</a></li>
+                                            <li><a href="./koh_kong.html">កោះកុង</a></li>
+                                        </ul>
+                            </li>
+
+                            <li class="sub-dropdown nav-item  ms-lg-4 position-relative">
+                                <a href="#" class="text-decoration-none nav-link text-dropdown"><span
+                                        class=" ">ផ្សេងៗ</span> <i class="bi bi-chevron-down toggle-dropdown  "></i></a>
+                                <ul class="sub-nav  ">
+                                    <li><a href="./about_page.html">អំពីយើង</a></li>
+
+                                    <li><a href="./contact.html">ទំនាក់ទំនង</a></li>
+                                    <li><a href="./blog-detail.html">ប្លុក</a></li>
+                                  
+                                    <li><a href="./faq.html">FAQ</a></li>
+                                    <li><a href="./coming.html">ឆាប់ៗនេះ</a></li>
+
+
+
+                                </ul>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+
+                </div>
+                <div class="social">
+                    <nav class="header-nav ms-auto ">
+                        <ul class="d-flex align-items-center">
+
+                            <li>
+                                <button type="button" class=" btn btn-mode d-lg-block me-3"
+                                    aria-label="Change to light theme" data-theme-toggle> <i
+                                        class="fa-regular fa-moon"></i></button>
+
+                            </li>
+                            <li class=" dropdown">
+
+                                <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                                    <i class="bi bi-bell"></i>
+                                    <span class="badge   bg-danger badge-number">3</span>
+                                </a><!-- End Notification Icon -->
+
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications ">
+                                    <li class="dropdown-header">
+                                        អ្នកមានការជូនដំណឹងថ្មីចំនួន3
+                                        <a href="#"><span class="badge rounded-pill view-all p-2 ms-2 Kantumruy">
+                                                មើលទាំងអស់
+                                            </span></a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li class="notification-item">
+                                        <!-- <i class="bi bi-exclamation-circle text-warning"></i> -->
+                                        <img src="./assets/images/globe-showing-asia-australia.svg" width="35px" alt="">
+                                        <div>
+                                            <h4>ដំណើរកំសាន្ត</h4>
+                                            <p>ស្វែងរកទីកន្លែងថ្មីជាមួយនឹងដំណើរកម្សាន្តនាពេលខាងមុខរបស់យើង!
+                                                កុំខកខានបទពិសោធន៍ដែលមិនអាចបំភ្លេចបាន និងគោលដៅដ៏អស្ចារ្យ។</p>
+                                            <p>30 min. ago</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li class="notification-item">
+                                        <!-- <i class="bi bi-x-circle text-danger"></i> -->
+                                        <img src="./assets/images/glowing-star.svg" width="35px" alt="">
+                                        <div>
+                                            <h4>ការបញ្ចុះតម្លៃ</h4>
+                                            <p>ការផ្តល់ជូនពេលវេលាមានកំណត់! រីករាយជាមួយការបញ្ចុះតម្លៃ 30%
+                                                លើដំណើរកម្សាន្តដ៏រំភើបរបស់យើង។
+                                                កុំ​ឲ្យ​ឱកាស​នេះ​កន្លង​ផុត​ទៅ​ដើម្បី​ស្វែង​យល់​ពី​កន្លែងកម្សាន្ត​ក្នុង​តម្លៃ​តិច!
+                                            </p>
+                                            <p>1 hr. ago</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li class="notification-item">
+                                        <i class="bi bi-check-circle text-success"></i>
+                                        <div>
+                                            <h4>សេវាកម្មនិងទំនុកចិត្ត</h4>
+                                            <p>.ការធ្វើដំណើរដែលបានគ្រោងទុកយ៉ាងល្អិតល្អន់
+                                                និងមគ្គុទ្ទេសក៍ដែលមានចំណេះដឹងដល់ការដឹកជញ្ជូនប្រកបដោយផាសុកភាព
+                                                និងការអត្ថាធិប្បាយប្រកបដោយការយល់ដឹង
+                                                យើងធានាថាគ្រប់ទិដ្ឋភាពនៃការធ្វើដំណើររបស់អ្នកត្រូវបានយកចិត្តទុកដាក់។</p>
+                                            <p>2 hrs. ago</p>
+                                        </div>
+                                    </li>
+
+
+
+                                </ul>
+                                <!-- End Notification Dropdown Items -->
+
+                            </li>
+                            <li class=" dropdown pe-3">
+
+                                <a class="nav-link nav-profile d-flex align-items-center img-fluid pe-0" href="#"
+                                    data-bs-toggle="dropdown">
+                                    <img src="./assets/images/photo_2023-08-11 12.02.31.jpeg" alt="Profile"
+                                        class="rounded-circle">
+                                    <span class="d-none d-md-block dropdown-toggle ps-2 Dangrek">ទិត្យាពង្ស</span>
+                                </a><!-- End Profile Iamge Icon -->
+
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+                                    <li class="dropdown-header">
+                                        <h6 class="Kantumruy">ទិត្យាពង្ស</h6>
+
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="./Profile.html">
+                                            <i class="bi bi-person"></i>
+                                            <span class="Kantumruy ms-2">ប្រវត្តិរូប</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="./wish.html">
+                                            <i class="bi bi-bag-heart-fill me-2"></i>
+                                            <span>ចំណង់ចំណូលចិត្ត</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="./hisoty-book.html">
+                                            <i class="bi bi-clock-history me-2"></i>
+                                            <span>ប្រវត្តនៃការកក់</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="#">
+                                            <i class="bi bi-box-arrow-right"></i>
+                                            <span class="Kantumruy ms-2"> ចាកចេញ</span>
+                                        </a>
+                                    </li>
+
+                                </ul><!-- End Profile Dropdown Items -->
+                            </li>
+
+                            <!-- End Profile Nav -->
+
+                        </ul>
+                    </nav>
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <main id="main" class="main">
+
+        <section class="background-cleaning-service" data-bs-spy="scroll" data-bs-target="#bsb-tpl-navbar"
+            data-bs-smooth-scroll="true" tabindex="0">
+            <div class="bg-cleaning-service mb-5">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
+
+            <section id="scrollspyHero" class=" bg-cleaning pt-3 pb-5 p-lg-0  ">
+
+                <div class="container overflow-hidden">
+                    <div class="row gy-5 gy-lg-0 align-items-lg-center justify-content-lg-between">
+
+                        <div class="col-12 col-lg-6 order-1 order-lg-0 text-md-center text-sm-center"
+                            data-aos="fade-right">
+                            <h1 class="display-3 fw-bold mb-4 text-white Dangrek">សេវាកម្ម​សម្អាតបន្ទប់ក្នុងសណ្ឋាគារ
+                            </h1>
+                        </div>
+                        <div class="col-12 col-lg-5 text-center">
+
+                            <img class="img-fluid rounded-5" loading="lazy" data-aos="fade-left"
+                                src="https://images.vexels.com/media/users/3/325525/isolated/preview/8286bc3c2bcc6a7312db6c55ea8a3593-woman-in-an-apron-cleaning-a-cart.png"
+                                alt="">
+                        </div>
+                    </div>
+                </div>
+               
+
+
+            </section>
+
+        </section>
+
+        <section >
+
+            <section id="scrollspyServices"
+                class="bsb-service-6 bsb-tpl-bg-alabaster py-5 py-xl-8 bsb-section-py-xxl-1">
+
+                <div class="container">
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-10 col-lg-8 col-xl-7">
+                            <h3 class=" display-4 mb-1 h2 text-center text-uppercase Dangrek " data-aos="flip-left">
+                                ពេល​លោក​អ្នក​មាន​តម្រូវការ​ពិសេស</h3>
+                            <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle mt-5">
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container bsb-tpl-bg-alabaster overflow-hidden">
+
+                    <div class="row gy-4 gy-md-4 gx-xxl-5">
+
+                        <div class="col-12 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="500">
+                            <div class="card bg-transparent border-bg rounded-0 overflow-hidden">
+                                <div class="card-body">
+
+                                    <img class=" img-fluid mb-3 "
+                                        src="https://mccambodia.com//images/2022/10/31/mc-cleaning.jpg" alt="">
+                                    <h3 class="h2 fs-3 mb-4  Dangrek">សម្អាត​​កម្រាលព្រំនិងឥដ្ឋ​</h3>
+                                    <p class="mb-4 Kantumruy">កម្រាលព្រំ​របស់​លោកអ្នក​នឹង​មើលទៅ​ឃើញ​ស្អាត
+                                        និងមាន​ក្លិនល្អ!
+                                        កម្រាលព្រំ​បង្កើន​ភាពស្រស់ស្អាត​សម្រាប់​លំនៅឋាន ឬអគារ​របស់​លោកអ្នក។
+                                        ការ​សម្អាត​កម្រាលព្រំ​គឹ​មិនមែន​គ្រាន់តែ​សម្អាត​ធម្មតា​ដូចដែល​យើង​ធ្លាប់ធ្វើ​នោះទេ។
+                                        វា​តម្រូវឲ្យ​មាន​អ្នកជំនាញ​ដែល​មាន​បទពិសោធ​សម្អាត​យើង​យកចិត្តទុកដាក់​ជាមួយវា។
+                                        ​មិនថា​កម្រាលព្រំ​លោកអ្នកធំ ឬតូច​ មានជាយ ឬ​មិនមានជាយ ក្រុម MC
+                                        សម្អាត​អាច​សម្អាត​បាន​ទាំងអស់។</p>
+                                    <a href="" class=" text-decoration-none link-primary Kantumruy">
+                                        អានបន្ថែម
+
+                                    </a>
+                                    <div
+                                        class="bsb-circle bg-accent border border-4 border-accent position-absolute top-100 start-100 translate-middle">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-easing="linear" data-aos-duration="500">
+                            <div class="card bg-transparent border-bg rounded-0 overflow-hidden">
+                                <div class="card-body">
+
+                                    <img class=" img-fluid mb-4"
+                                        src="https://mccambodia.com//images/2022/11/01/special-service.jpg" alt="">
+                                    <h3 class="h2 fs-3 mb-4 Dangrek">ពិនិត្យអនាម័យនិងសម្លាប់មេរោគ</h3>
+                                    <p class="mb-4  Kantumruy">
+                                        យើង​មាន​សេវាកម្ម​សម្អាត​លម្អិត​សម្រាប់​ម៉ាស៊ីនត្រជាក់​នៅ​គ្រប់​ចន្លោះ​ដែល​លោក​អ្នក​មិនអាច​សម្អាតបាន។
+                                        ការសម្អាត​នេះ​រួមបញ្ចូល​ការ​សម្អាត​លើផ្នែក​ផ្សេងៗ​ជាជាង​ការ​យក​តម្រង
+                                        និងសំបក​ម៉ាស៊ីន​ចេញពីតួ។
+                                        យើង​មាន​បទពិសោធ​សម្អាត​ម៉ាស៊ីនត្រជាក់​គ្រប់ប្រភេទ។
+                                        សេវាកម្ម​សម្អាត​លម្អិត​លើ​ម៉ាស៊ីនត្រជាក់​អាច​ធ្វើឲ្យ​ម៉ាស៊ីនត្រជាក់​លោកអ្នក​មើលទៅ​ដូចថ្មី
+                                        មានក្លិនល្អ
+                                        គ្មានផ្សិត​ធូលី និង​សារធាតុ​អាលែក្ស៊ី។</p>
+                                    <a href="" class=" text-decoration-none link-primary Kantumruy">
+                                        អានបន្ថែម
+                                    </a>
+                                    <div
+                                        class="bsb-circle bg-accent border border-4 border-accent position-absolute top-100 start-100 translate-middle">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-easing="linear"
+                            data-aos-duration="500">
+                            <div class="card bg-transparent border-bg rounded-0 overflow-hidden">
+                                <div class="card-body">
+                                    <img class=" img-fluid mb-4"
+                                        src="https://qtxasset.com/quartz/qcloud1/media/image/hotelmanagement/1571237239/security.jpg/security.jpg?VersionId=Kv9nn66B3AL2rxkVBriF7Fw.p0ifWu1r"
+                                        alt="">
+                                    <h3 class="h2 fs-3 mb-3 py-2 Dangrek">សុវត្ថិភាពផ្សេងៗក្នុងសណ្ឋាគារ</h3>
+                                    <p class="mb-4 Kantumruy">អ្នកត្រូវពិនិត្យមើលកន្លែងទទួលភ្ញៀវ និងចំណតរថយន្ត។
+                                        អ្នកគួរតែពិនិត្យមើលជណ្តើរ និងជណ្តើរយន្តផងដែរ។
+                                        អ្នកត្រូវធានាឱ្យបុគ្គលិកថែទាំផ្ទះ និងសេវាកម្មរបស់ពួកគេផងដែរ
+                                        រក្សាបាននូវស្ថិរភាពអាជីវកម្ម
+                                        និងធានាបាននូវសុវត្ថិភាពជូនដល់ភ្ញៀវ សេវាកម្មដឹកជញ្ជូនភ្ញៀវក្នុងសណ្ឋាគារ
+
+                                        ការផ្គត់ផ្គង់ទំនិញ និងសេវាកម្មពីអ្នកផ្គត់ផ្គង់ <br><br></p>
+                                    <a href="" class="text-decoration-none link-primary Kantumruy">
+                                        អានបន្ថែម
+                                    </a>
+                                    <div
+                                        class="bsb-circle bg-accent border border-4 border-accent position-absolute top-100 start-100 translate-middle">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <hr class="w-50 mx-auto mb-5 mb-xl-9 border-dark-subtle mt-5">
+
+            <section class="bsb-tpl-bg-alabaster py-5 py-xl-8 bsb-section-py-xxl-1">
+                <div class="container">
+                    <div class="row gy-5 gy-lg-0">
+                        <div class="col-12 col-lg-4">
+                            <h3 class=" fs-1  h2 mb-3 mb-xl-4 Dangrek">អតិថិជនរបស់យើង។</h3>
+                            <p class="lead mb-4 h2 mb-xl-5 Kantumruy">យើងជឿជាក់លើការពេញចិត្តរបស់អតិថិជន។
+                                នេះគឺជាសក្ខីកម្មមួយចំនួនរបស់អតិថិជនដែលសក្តិសមរបស់យើង។</p>
+                            <img src="./assets/images/happy-cartoon-man-gives-5-stars-customer-feedback-best-quality-excellence-high-performance-rating-positive-rating-vector.jpg" class="w-100 rounded" alt="">
+
+                        </div>
+                        <div class="col-12 col-lg-8">
+                            <div class="row justify-content-xl-end">
+                                <div class="col-12 col-xl-11">
+                                    <div class="row gy-4">
+
+                                        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="750">
+                                            <div
+                                                class="card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+                                                <div class="card-body p-4 p-xxl-5">
+                                                    <figure>
+                                                        <img class="img-fluid  mb-4 border border-5" width="90px"
+                                                            style="border-radius: 50%;" loading=""
+                                                            src="./assets/images/user4.jpg"
+                                                            alt="">
+                                                        <figcaption>
+                                                            <p class="bsb-blockquote-icon mb-4 Kantumruy">
+                                                                កន្លែងដ៏ល្អឥតខ្ចោះសម្រាប់ការស្នាក់នៅ។
+                                                                បន្ទប់មានផាសុខភាព និងកក់ក្តៅណាស់។
+                                                                រន្ធអគ្គិសនីជាច្រើនសម្រាប់សាកឧបករណ៍របស់ខ្ញុំ
+                                                                និងធ្វើការជាមួយកុំព្យូទ័រយួរដៃរបស់ខ្ញុំ។
+                                                                ​ម៉ាស៊ីន​ងូតទឹក​ក្តៅ​ល្អ​ពិត​ជា​ងាយស្រួល​ប្រើ។បុគ្គលិករួសរាយរាក់ទាក់
+                                                                សណ្ឋាគារនេះស្ថិតនៅចំកណ្តាលយ៉ាងងាយស្រួល កន្លែងញ៉ាំអាហារ។
+                                                                ខ្ញុំនឹងត្រលប់មកវិញ។</p>
+                                                            <h4 class="mb-2 h2 fs-4 Dangrek">រស្មី</h4>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div
+                                                        class="bsb-circle bg-accent border border-4 border-accent position-absolute top-100 start-100 translate-middle">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6 bg-transparent" data-aos="fade-up"
+                                            data-aos-duration="1500">
+                                            <div
+                                                class="card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+                                                <div class="card-body p-4 p-xxl-5">
+                                                    <figure>
+                                                        <img class="img-fluid  mb-4 border border-5" width="90px"
+                                                            style="border-radius: 50%;" loading=""
+                                                            src="./assets/images/user1.jpg"
+                                                            alt="">
+                                                        <figcaption>
+                                                            <p class="bsb-blockquote-icon mb-4 Kantumruy">
+                                                                សម្រាប់អាហារពេលព្រឹក
+                                                                និងអាហារថ្ងៃត្រង់គឺល្អ។
+                                                                អាហារដ៏ល្អ អាហារថ្ងៃត្រង់ អាហារប៊ូហ្វេសាឡាដច្រើនជម្រើស 2
+                                                                ជម្រើសសម្រាប់មុខម្ហូបសំខាន់។ ថ្ងៃនេះបានសាកមាន់ហើយ
+                                                                ពិតជាល្អណាស់។ មេចុងភៅដ៏អស្ចារ្យ
+                                                                និងសមាមាត្រតម្លៃ និងគុណភាពដ៏ល្អឥតខ្ចោះ។ ខ្ញុំនឹងត្រលប់មកវិញ។
+                                                                គ្រឿងបរិក្ខារភោជនីយដ្ឋានដ៏កក់ក្ដៅ។</p>
+                                                            <h4 class="mb-2 h2 fs-4 Dangrek">ដេវិត</h4>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div
+                                                        class="bsb-circle bg-accent border border-4 border-accent position-absolute top-100 start-100 translate-middle">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="2250">
+                                            <div
+                                                class="card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+                                                <div class="card-body p-4 p-xxl-5">
+                                                    <figure>
+                                                        <img class="img-fluid  mb-4 border border-5" width="90px"
+                                                            style="border-radius: 50%;" loading=""
+                                                            src="./assets/images/user2.jpg"
+                                                            alt="">
+                                                        <figcaption>
+                                                            <p class="bsb-blockquote-icon mb-4 Kantumruy">
+                                                                មិត្តភាពនិងសេវាកម្មផ្ទាល់ខ្លួន
+                                                                បុគ្គលិកទាំងអស់មានភាពរួសរាយរាក់ទាក់ និងមានប្រយោជន៍
+                                                                ហើយគ្មានការស្នើសុំជំនួយជាបញ្ហាសម្រាប់ពួកគេទេ។
+                                                                សណ្ឋាគារនេះមានទីតាំងល្អ
+                                                                នៅជិតកន្លែងដើរទិញឥវ៉ាន់ ការដឹកជញ្ជូន និងកន្លែងទេសចរណ៍។
+                                                                យើងប្រាកដជានឹងស្នាក់នៅទីនោះម្តងទៀត
+                                                            </p>
+                                                            <h4 class="mb-md-2 mb-4 h2 fs-4 Dangrek">វាសនា</h4>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div
+                                                        class="bsb-circle bg-accent border border-4 border-accent position-absolute top-100 start-100 translate-middle">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12 col-md-6" data-aos="fade-up" data-aos-duration="3000">
+                                            <div
+                                                class="card border-0 border-bottom border-primary shadow-sm overflow-hidden">
+                                                <div class="card-body p-4 p-xxl-5">
+                                                    <figure>
+                                                        <img class="img-fluid  mb-4 border border-5" width="90px"
+                                                            style="border-radius: 50%;" loading=""
+                                                            src="./assets/images/user3.jpg"
+                                                            alt="">
+                                                        <figcaption>
+                                                            <p class="bsb-blockquote-icon mb-4 Kantumruy">សណ្ឋាគារល្អ
+                                                                និងបុគ្គលិកគួរឱ្យស្រឡាញ់។
+                                                                អាហារពេលព្រឹកគឺរីករាយ
+                                                                និងមានជម្រើសដ៏ល្អជាមួយបុគ្គលិកដែលយកចិត្តទុកដាក់។
+                                                                បានទទួលការណែនាំល្អសម្រាប់អាហារ។
+                                                                បន្ទប់ស្អាតជាមួយនឹងរបស់ចាំបាច់។
+                                                                អ្វីគ្រប់យ៉ាងដែលយើងត្រូវការសម្រាប់ធ្វើការស្នាក់នៅក្នុងរយៈពេលខ្លី
+                                                            </p>
+                                                            <h4 class="mb-2 mb-lg-4 h2 fs-4 Dangrek">នីតា</h4>
+                                                        </figcaption>
+                                                    </figure>
+                                                    <div
+                                                        class="bsb-circle bg-accent border border-4 border-accent position-absolute top-100 start-100 translate-middle">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="scrollspyContact" class="bsb-tpl-bg-alabaster py-5 py-xl-8 bsb-section-py-xxl-1">
+                <div class="container" data-aos="zoom-in-right">
+                    <div class="row gy-3 gy-md-4 gy-lg-0">
+                        <div class="col-12 col-lg-6">
+                            <div class="row justify-content-xl-center">
+                                <div class="col-12 col-xl-11">
+                                    <h3 class="display-5 h2 Dangrek mb-3 Dangrek">ទំនាក់ទំនង</h3>
+
+                                    <div class=" d-flex">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="32"
+                                            fill="currentColor" class="bi bi-chevron-right text-primary"
+                                            viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                        </svg>
+                                        <p class="lead h2 mb-5 Kantumruy">យើងតែងតែមប្រើការងារជាមួយអតិថិជនជានិច្ច។
+                                            ប្រសិនបើអ្នកមានបញ្ហា
+                                            សូមទាក់ទងតាមវិធីមួយក្នុងចំណោមវិធីខាងក្រោម។</p>
+                                    </div>
+
+                                    <div class="d-flex mb-5">
+                                        <div class="me-4 text-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                fill="currentColor" class="bi bi-geo" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M8 1a3 3 0 1 0 0 6 3 3 0 0 0 0-6zM4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="mb-3 h2 Dangrek">ទីតាំង</h4>
+                                            <address class="mb-0 text-secondary Kantumruy">ភ្នំពេញ
+                                            </address>
+                                        </div>
+                                    </div>
+                                    <div class="row mb-5">
+                                        <div class="col-12 col-sm-6">
+                                            <div class="d-flex mb-5 mb-sm-0">
+                                                <div class="me-4 text-primary">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                        fill="currentColor" class="bi bi-telephone-outbound"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511zM11 .5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V1.707l-4.146 4.147a.5.5 0 0 1-.708-.708L14.293 1H11.5a.5.5 0 0 1-.5-.5z" />
+                                                    </svg>
+                                                </div>
+                                                <div>
+                                                    <h4 class="mb-3 h2 Dangrek">ទូរស័ព្ទលេខ</h4>
+                                                    <p class="mb-0">
+                                                        <a class="link-secondary text-decoration-none Kantumruy"
+                                                            href="">085548101</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <div class="d-flex mb-0">
+                                                <div class="me-4 text-primary">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                        fill="currentColor" class="bi bi-envelope-at"
+                                                        viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
+                                                        <path
+                                                            d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z" />
+                                                    </svg>
+                                                </div>
+                                                <div>
+                                                    <h4 class="mb-3 h2 Dangrek">អ៊ីមែល</h4>
+                                                    <p class="mb-0">
+                                                        <a class="link-secondary text-decoration-none Kantumruy"
+                                                            href="">hmp168@gmail.com</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex">
+                                        <div class="me-4 text-primary">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                fill="currentColor" class="bi bi-alarm" viewBox="0 0 16 16">
+                                                <path
+                                                    d="M8.5 5.5a.5.5 0 0 0-1 0v3.362l-1.429 2.38a.5.5 0 1 0 .858.515l1.5-2.5A.5.5 0 0 0 8.5 9V5.5z" />
+                                                <path
+                                                    d="M6.5 0a.5.5 0 0 0 0 1H7v1.07a7.001 7.001 0 0 0-3.273 12.474l-.602.602a.5.5 0 0 0 .707.708l.746-.746A6.97 6.97 0 0 0 8 16a6.97 6.97 0 0 0 3.422-.892l.746.746a.5.5 0 0 0 .707-.708l-.601-.602A7.001 7.001 0 0 0 9 2.07V1h.5a.5.5 0 0 0 0-1h-3zm1.038 3.018a6.093 6.093 0 0 1 .924 0 6 6 0 1 1-.924 0zM0 3.5c0 .753.333 1.429.86 1.887A8.035 8.035 0 0 1 4.387 1.86 2.5 2.5 0 0 0 0 3.5zM13.5 1c-.753 0-1.429.333-1.887.86a8.035 8.035 0 0 1 3.527 3.527A2.5 2.5 0 0 0 13.5 1z" />
+                                            </svg>
+                                        </div>
+                                        <div>
+                                            <h4 class="mb-3 h2 Dangrek">ម៉ោងធ្វើការ</h4>
+                                            <div class="d-flex mb-1 Kantumruy">
+                                                <p class="text-secondary mb-0 me-5">ច័ន្ទ - សុក្រ</p>
+                                                <p class="text-secondary mb-0">9am - 5pm</p>
+                                            </div>
+                                            <div class="d-flex Kantumruy">
+                                                <p class="text-secondary mb-0 me-5">សៅរ៏ - អាទិត្យ</p>
+                                                <p class="text-secondary mb-0">9am - 2pm</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 bsb-tpl-bg-alabaster col-lg-6" data-aos="flip-left"
+                            data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                            <div class="bg-white position-relative border rounded shadow-sm overflow-hidden"
+                                style="box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;">
+
+                                <form class="position-relative z-1" action="">
+                                    <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                                        <div class="col-12">
+                                            <label for="fullname" class="form-label  Dangrek">ឈ្មោះពេញ <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" class="form-control" id="fullname" value="" required>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label for="email" class="form-label Dangrek">អ៊ីមែល <span
+                                                    class="text-danger">*</span></label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                                    </svg>
+                                                </span>
+                                                <input type="email" class="form-control" id="email" value="" required>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <label for="phone" class="form-label Dangrek">លេងទូរស័ព្ទ <span
+                                                    class="text-danger">*</span></label>
+                                            <div class="input-group">
+                                                <span class="input-group-text">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                        fill="currentColor" class="bi bi-telephone" viewBox="0 0 16 16">
+                                                        <path
+                                                            d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                                                    </svg>
+                                                </span>
+                                                <input type="tel" class="form-control" id="phone" value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="message" class="form-label Dangrek">មតិផ្សេងៗ <span
+                                                    class="text-danger">*</span></label>
+                                            <textarea class="form-control" id="message" rows="3" required></textarea>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="d-grid">
+                                                <button class="btn h2 btn-lg Dangrek text-light" role="button" data-bs-toggle="modal"
+                                                data-bs-target="#SuccesModal" type="submit">បណ្ជូនសារ</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div
+                                    class="bsb-circle bg-accent border border-4 border-accent position-absolute top-100 start-100 translate-middle">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+                    <!-- -----modal----- -->
+        <div class="container-flude">
+            <div class="modal fade" id="SuccesModal" data-bs-backdrop="static" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog  mt-5">
+                    <div class="modal-content success w-100 bg-transparent border-0">
+                        <div class="modal-body rounded">
+                            <div class="message">
+                                <div class="check position-relative">
+                                    <p
+                                        class="check1 border d-flex justify-content-center align-items-center m-auto position-absolute">
+                                        &#10004;</p>
+                                </div>
+                                <h3 class="Dangrek text-center text-color">ការផ្ញើរទទួលបានជោគជ័យ</h3>
+                                <p class="Kantumruy text-center my-4 ">សំណើររបស់អ្នកត្រូវបានបញ្ជាក់
+                                    ពិនិត្យអ៊ីមែលរបស់អ្នកសម្រាប់ព័ត៌មានលម្អិត។<br> សូមអគុណ!</p>
+                                <button type="button"
+                                    class="close-success d-flex justify-content-center align-items-center btn m-auto Kantumruy fs-5 text-color-modal"
+                                    data-bs-dismiss="modal" aria-label="Close" id="liveToastBtn">យល់ព្រម</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </section>
+
+
+        <!-- Javascript Files: Vendors -->
+        <script src="https://unpkg.com/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="./assets/js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
+    </main>
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top  d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+
+            <footer id="footer" class="footer" data-aos="fade-up">
+
+                <div class="container footer-top">
+                    <div class="row gy-4">
+                        <div class="col-lg-4 col-md-6 footer-about">
+                            <a href="index.html" class="d-flex align-items-center">
+                                <img src="./assets/images/hmp-tour-high-resolution-logo-transparent.png" width="150" alt="">
+                            </a>
+                            <div class="footer-contact pt-3">
+                                <p>ទួលគោក​​​ ភ្នំពេញ </p>
+          
+                                <p ><strong>លេខទូរស័ព្ទ:</strong> <span><a href="tel:015 758787" class=" fs-6 text-decoration-none">០15758787</a></span></p>
+                                <p><strong>អុីម៉េល:</strong> <span><a href="mailto:tityapong77@gmail.com" class="text-decoration-none fs-6">tityapong77@gmail.com</a></span></p>
+                                <!-- <a href="kansokmean006@gmail.com">send email</a> -->
+                                <!-- <p class="x"><a href="mailto:tityapong77@gmail.com">tityapong77@gmail.com</a></p> -->
+                            </div>
+                        </div>
+          
+                        <div class="col-lg-2 col-md-6 footer-links">
+                            <h4>តំណ​ភ្ជាប់​ដែល​មានប្រយោជន៍</h4>
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <a href="./Home.html">ទំព័រដើម</a></li>
+                                <li><i class="bi bi-chevron-right"></i> <a href="./about_page.html">អំពីយើង</a></li>
+                                <li><i class="bi bi-chevron-right"></i> <a href="./service.html">សេវាកម្ម</a></li>
+                                <li><i class="bi bi-chevron-right"></i> <a href="./kampot.html">ដំណើរកំសាន្ត</a></li>
+                            </ul>
+                        </div>
+          
+                        <div class="col-lg-2 col-md-6 footer-links">
+                            <h4>សេវាកម្មរបស់យើង</h4>
+                            <ul>
+                                <li><i class="bi bi-chevron-right"></i> <a href="./restaurants.html">ម្ហូបអាហារ</a></li>
+                                <li><i class="bi bi-chevron-right"></i> <a href="./hotel.html">ប្រភេទនៃបន្ទប់</a></li>
+                                <li><i class="bi bi-chevron-right"></i> <a href="./gym.html">ស្ប៉ា និងកន្លែងហាត់ប្រាណ</a></li>
+                                <li><i class="bi bi-chevron-right"></i> <a href="./service.html">សុវត្ថិភាព និងកន្លែងស្អាត</a></li>
+                            </ul>
+                        </div>
+          
+                        <div class="col-lg-4 col-md-6">
+                            <h4>បណ្តាញសង្គម</h4>
+                            <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
+                            <div class="social-links d-flex">
+                                <a href=""><i class="bi bi-twitter-x"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100041282045035&mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
+                                <a href=""><i class="bi bi-instagram"></i></a>
+                                <a href=""><i class="bi bi-linkedin"></i></a>
+                            </div>
+          
+                            <h4 class="mt-4">ការទូទាត់ និងសុវត្ថិភាព</h4>
+                            <div class="payment-card d-flex gap-2 ">
+                                <img src="./assets/images/credit-card.svg" width="50px" alt="">
+                                <img src="./assets/images/mastercard.svg" width="40px" alt="">
+                                <img src="./assets/images/paypal.svg" width="40px" alt="">
+                                <img src="./assets/images/visa.svg" width="40px" alt="">
+                            </div>
+          
+                        </div>
+          
+                    </div>
+                </div>
+          
+                <div class="container copyright text-center mt-4">
+          
+                    <p><strong>រក្សាសិទ្ធដោយក្រុមទី5</strong></p>
+                </div>
+          
+            </footer>
+          
+</body>
+
+
+
+<script src="./assets/vendor/aos/aos.js"></script>
+<script src="./assets/js/darkmode.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="./assets/js/scrool.js"></script>
+<script>
+    AOS.init();
+</script>
+
+
+</html>

@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>--Hotel_HMP--</title>
+  <link rel="stylesheet" href="./assets/styles/bootstrap.css">
+  <link rel="stylesheet" href="./assets/styles/style.css">
+  <link rel="stylesheet" href="./assets/styles/hover.css">
+  <link rel="stylesheet" href="./assets/styles/flatpickr.min.css">
+  <link rel="stylesheet" href="./assets/styles/bootstrap-icons/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/styles/fontawesome/css/all.css">
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+
+
+<body>
+  <header>
+    <nav id="nav-scroll" class="navbar   navbar-expand-lg fixed-top bg-transparent">
+      <div class="container">
+        <a class="navbar-brand me-auto  mb-2" href="Home.html">
+ 
+          <img src="./assets/images/hmp-tour-high-resolution-logo-transparent.png" width="170px" alt="">
+
+        </a>
+        <button class="navbar-toggler mt-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <!-- <span class="navbar-toggler-icon"></span> -->
+         
+          <i class="  bi bi-list toggle-sidebar-btn"></i>
+        </button>
+
+
+
+
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title " id="offcanvasNavbarLabel">HMP Tour</h5>
+            <button type="button" class="btn-closecanvas ms-auto" data-bs-dismiss="offcanvas">
+
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="offcanvas-body ">
+            <ul class="navbar-nav  justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" aria-current="page" href="Home.html">ទំព័រដើម</a>
+              </li>
+
+              <li class="sub-dropdown  nav-item   ms-lg-3 position-relative">
+                <a href="#" class="text-decoration-none text-dropdown nav-link"><span class=" ">សេវាកម្ម</span> <i
+                    class="bi bi-chevron-down toggle-dropdown  "></i></a>
+                <ul class="sub-nav ">
+                  <li><a href="restaurants.html">ម្ហូបអាហារ</a></li>
+
+                  <li><a href="hotel.html#typeroom">ប្រភេទនៃបន្ទប់</a></li>
+                  <li><a href="gym.html">ស្ប៉ា និងកន្លែងហាត់ប្រាណ</a></li>
+
+                  <li><a href="service.html">សុវត្ថិភាព និងកន្លែងស្អាត</a></li>
+
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active-page mx-lg-2" href="hotel.html">សណ្ឋាគារ</a>
+              </li>
+
+              <li class="sub-dropdown  nav-item   ms-lg-3 position-relative">
+                <a href="#" class="text-decoration-none text-dropdown nav-link"><span class=" ">កន្លែងកម្សាន្ត</span> <i
+                    class="bi bi-chevron-down toggle-dropdown  "></i></a>
+                <ul class="sub-nav  ">
+                  <li><a href="./pp.html">ភ្នំពេញ</a></li>
+                  <li><a href="./siem_reap.html">សៀមរាប</a></li>
+
+                  <li><a href="./kampot.html">កំពត</a></li>
+                  <li><a href="./kep.html">កែប</a></li>
+
+                  <li><a href="./kps.html">កំពង់សោម</a></li>
+                  <li><a href="./koh_kong.html">កោះកុង</a></li>
+                </ul>
+              </li>
+
+              <li class="sub-dropdown nav-item  ms-lg-4 position-relative">
+                <a href="#" class="text-decoration-none nav-link text-dropdown"><span class=" ">ផ្សេងៗ</span> <i
+                    class="bi bi-chevron-down toggle-dropdown  "></i></a>
+                <ul class="sub-nav  ">
+                  <li><a href="./about_page.html">អំពីយើង</a></li>
+                  <li><a href="./contact.html">ទំនាក់ទំនង</a></li>
+                  <li><a href="./blog-detail.html">ប្លុក</a></li>
+                  <li><a href="./404.html">ទំព័រមានបញ្ហា</a></li>
+                  <li><a href="./faq.html">FAQ</a></li>
+                  <li><a href="./coming.html">ឆាប់ៗនេះ</a></li>
+                </ul>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+        </div>
+        <div class="social">
+          <nav class="header-nav ms-auto">
+            <ul class="d-flex align-items-center">
+
+              <li>
+                <button type="button" class=" btn btn-mode d-lg-block me-3" aria-label="Change to light theme"
+                  data-theme-toggle> <i class="fa-regular fa-moon"></i></button>
+
+              </li>
+
+
+              <li class=" dropdown">
+
+                <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                  <i class="bi bi-bell"></i>
+                  <span class="badge   bg-danger badge-number">3</span>
+                </a><!-- End Notification Icon -->
+
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications ">
+                  <li class="dropdown-header">
+                    អ្នកមានការជូនដំណឹងថ្មីចំនួន3
+                    <a href="#"><span class="badge rounded-pill view-all p-2 ms-2">
+                        មើលទាំងអស់
+                      </span></a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li class="notification-item">
+                    <!-- <i class="bi bi-exclamation-circle text-warning"></i> -->
+                    <img src="./assets/images/globe-showing-asia-australia.svg" width="35px" alt="">
+                    <div>
+                      <h4>ដំណើរកំសាន្ត</h4>
+                      <p>ស្វែងរកទីកន្លែងថ្មីជាមួយនឹងដំណើរកម្សាន្តនាពេលខាងមុខរបស់យើង!
+                        កុំខកខានបទពិសោធន៍ដែលមិនអាចបំភ្លេចបាន និងគោលដៅដ៏អស្ចារ្យ។</p>
+                      <p>30 min. ago</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li class="notification-item">
+                    <!-- <i class="bi bi-x-circle text-danger"></i> -->
+                    <img src="./assets/images/glowing-star.svg" width="35px" alt="">
+                    <div>
+                      <h4>ការបញ្ចុះតម្លៃ</h4>
+                      <p>ការផ្តល់ជូនពេលវេលាមានកំណត់! រីករាយជាមួយការបញ្ចុះតម្លៃ 30%
+                        លើដំណើរកម្សាន្តដ៏រំភើបរបស់យើង។
+                        កុំ​ឲ្យ​ឱកាស​នេះ​កន្លង​ផុត​ទៅ​ដើម្បី​ស្វែង​យល់​ពី​កន្លែងកម្សាន្ត​ក្នុង​តម្លៃ​តិច!
+                      </p>
+                      <p>1 hr. ago</p>
+                    </div>
+                  </li>
+
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li class="notification-item">
+                    <i class="bi bi-check-circle text-success"></i>
+                    <div>
+                      <h4>សេវាកម្មនិងទំនុកចិត្ត</h4>
+                      <p>.ការធ្វើដំណើរដែលបានគ្រោងទុកយ៉ាងល្អិតល្អន់
+                        និងមគ្គុទ្ទេសក៍ដែលមានចំណេះដឹងដល់ការដឹកជញ្ជូនប្រកបដោយផាសុកភាព
+                        និងការអត្ថាធិប្បាយប្រកបដោយការយល់ដឹង
+                        យើងធានាថាគ្រប់ទិដ្ឋភាពនៃការធ្វើដំណើររបស់អ្នកត្រូវបានយកចិត្តទុកដាក់។</p>
+                      <p>2 hrs. ago</p>
+                    </div>
+                  </li>
+
+
+
+                </ul>
+                <!-- End Notification Dropdown Items -->
+
+              </li>
+              <li class=" dropdown pe-3">
+
+                <a class="nav-link nav-profile d-flex align-items-center img-fluid pe-0" href="#"
+                  data-bs-toggle="dropdown">
+                  <img src="./assets/images/photo_2023-08-11 12.02.31.jpeg" alt="Profile" class="rounded-circle">
+                  <span class="d-none d-md-block dropdown-toggle ps-2 Dangrek">ទិត្យាពង្ស</span>
+                </a><!-- End Profile Iamge Icon -->
+
+                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile ">
+                  <li class="dropdown-header">
+                    <h6 class="Kantumruy">ទិត្យាពង្ស</h6>
+
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item d-flex align-items-center" href="./Profile.html">
+                      <i class="bi bi-person me-2"></i>
+                      <span> ប្រវត្តរូប</span>
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item d-flex align-items-center" href="./wish.html">
+                      <i class="bi bi-bag-heart-fill me-2"></i>
+                      <span>ចំណង់ចំណូលចិត្ត</span>
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item d-flex align-items-center" href="./hisoty-book.html">
+                      <i class="bi bi-clock-history me-2"></i>
+                      <span>ប្រវត្តនៃការកក់</span>
+                    </a>
+                  </li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+
+                  <li>
+                    <a class="dropdown-item d-flex align-items-center" href="./index.html">
+                      <i class="bi bi-box-arrow-right me-2"></i>
+                      <span>ចាកចេញ</span>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+
+              <!-- End Profile Nav -->
+
+            </ul>
+          </nav>
+
+
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <main>
+    <section class="hero-banner position-relative">
+      <div class="container-flude">
+        <img class="w-100" src="assets/images/hotel-banner-img.jpg" alt="">
+        <div
+          class="title-box position-absolute w-100 h-100 top-0 bg-black bg-opacity-25 d-flex flex-column justify-content-center align-items-center">
+          <p class="main-title text-light display-1 fw-bold">សណ្ឋាគារ</p>
+          <p class="description text-light h4 fw-normal">ផ្តល់ជូនលោកអ្នកនូវផាសុខភាព និងប្រណិតភាព </p>
+          <p class="description text-light h4 fw-normal mt-1">ជាមួយសណ្ឋាគារទំនើបៗទៅតាមតម្រូវការលោកអ្នក។</p>
+        </div>
+      </div>
+    </section>
+    <!-- ///////////////// -->
+    <div class="container">
+      <div
+        class="box-see-hotel mt-0 mt-lg-50 row bg-white shadow rounded-3 border-radius-md pb-4 p-3 mx-sm-0 mx-1 position-relative">
+        <div class="col-lg-3">
+          <label class="mb-1 text-black" for="choices-pro">ជ្រើសខេត្ត</label>
+          <select class="form-control mb-1 mb-lg-0" name="choices-leave" id="choices-pro" placeholder="Departure">
+            <option value="" selected disabled>ជ្រើសរើស</option>
+            <option value="Choice 1">សៀមរាប</option>
+            <option value="Choice 2">កំពង់សោម</option>
+            <option value="Choice 3">កំពត</option>
+            <option value="Choice 4">កែប</option>
+            <option value="Choice 5">ភ្នំពេញ</option>
+          </select>
+        </div>
+        <div class="col-lg-3">
+          <label class="mb-1 text-black" for="choices-type">ប្រភេទបន្ទប់</label>
+          <select class="form-control mb-1 mb-lg-0" name="choices-to" id="choices-type" placeholder="Destination">
+            <option value="" selected disabled>ជ្រើសរើស</option>
+            <option value="Choice 1">លក្ខណគ្រួសារ</option>
+            <option value="Choice 2">បន្ទប់ឯកជន</option>
+            <option value="Choice 3">សម្រាប់ការងារ</option>
+          </select>
+        </div>
+        <div class="col-lg-2">
+          <label class="mb-1 text-black" for="checkin">ថ្ងៃចូលស្នាក់</label>
+
+          <div class="input-group mb-1 mb-lg-0">
+            <span class="input-group-text"><i class="bi bi-box-arrow-in-right"></i></span>
+            <input class="form-control datepicker " placeholder="ជ្រើសរើសថ្ងៃ" type="date" id="checkin">
+          </div>
+
+        </div>
+        <div class="col-lg-2">
+          <label class="mb-1 text-black" for="checkout">ថ្ងៃចាកចេញ</label>
+
+          <div class="input-group mb-1 mb-lg-0">
+            <span class="input-group-text"><i class="bi bi-box-arrow-left"></i></span>
+            <input class="form-control datepicker " placeholder="ជ្រើសរើសថ្ងៃ" type="date" id="checkout">
+          </div>
+
+        </div>
+        <div class="col-lg-2 d-flex align-items-center my-auto pt-1">
+          <button type="button" class="btn btn-primary w-100 btn-lg mb-0 mt-4 py-1 Kantumruy"><i
+              class="bi bi-search"></i> ស្វែងរក</button>
+        </div>
+      </div>
+    </div>
+    <!-- //////////////////// -->
+    <section class="popular-hotel overflow-hidden">
+      <div class="container px-md-0">
+        <div class="hotel-title ps-0 pt-5 d-flex flex-column">
+          <p class="h1 m-auto">សណ្ឋាគារពេញនិយម</p>
+          <hr class="text-primary">
+        </div>
+        <div class="row g-5 mt-0">
+          <div class="col-lg-4 col-md-6 item">
+            <div class="card border-0 item-card card-block text-center" data-aos="fade-right" data-aos-offset="0"
+              data-aos-duration="900">
+
+              <a class="position-relative" href="detail hotel1.html"><img class="card-img-top"
+                  src="assets/images/p-hotel1.jpg" alt="Photo of sunset">
+
+              </a>
+              <div class="wishlist position-absolute end-0 top-0 text-white fs-4 me-3 mt-3">
+                <input class="d-none" type="checkbox" name="" id="heart1">
+                <label for="heart1" class="abc"><i  class="bi bi-heart-fill"></i></label>
+              </div>
+              <h4 class="card-title mt-3 ms-2">សណ្ឋាគារ សុវណ្ណ</h4>
+              <div class="stars text-warning">
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+              </div>
+              <h5 class="item-card-title my-2 Kantumruy"><i class="bi bi-geo-alt-fill"></i> កំពង់សោម</h5>
+              <p class="card-text Kantumruy">.Wifi .អាហារ .អាងហែលទឺក .Gym</p>
+              <a href="detail hotel1.html" class="mb-4 mx-5 px-4 btn btn-outline-primary hvr-curl-top-left Kantumruy"><i
+                  class="bi bi-eye-fill"></i> មើលបន្ថែម</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 item">
+            <div class="card border-0 item-card card-block text-center" data-aos="fade-down" data-aos-offset="50"
+              data-aos-duration="900">
+
+              <a class="position-relative" href="detail hotel2.html"><img class="card-img-top"
+                  src="assets/images/p-hotel2.jpg" alt="Photo of sunset">
+
+              </a>
+              <div class="wishlist position-absolute end-0 top-0 text-white fs-4 me-3 mt-3">
+                <input class="d-none" type="checkbox" name="" id="heart2">
+                <label for="heart2" class="abc"><i  class="bi bi-heart-fill"></i></label>
+              </div>
+              <h4 class="card-title mt-3 ms-2">សណ្ឋាគារ កែវពេជ្រ</h4>
+              <div class="stars text-warning">
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+              </div>
+              <h5 class="item-card-title my-2 Kantumruy"><i class="bi bi-geo-alt-fill"></i> កែប</h5>
+              <p class="card-text Kantumruy">.Wifi .អាហារ .អាងហែលទឺក​ .Gym</p>
+              <a href="detail hotel2.html" class="mb-4 mx-5 btn btn-outline-primary hvr-curl-top-left Kantumruy"><i
+                  class="bi bi-eye-fill"></i> មើលបន្ថែម</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 item">
+            <div class="card border-0 item-card card-block text-center" data-aos="fade-left" data-aos-offset="50"
+              data-aos-duration="900">
+              <a class="position-relative" href="detail hotel3.html"><img class="card-img-top"
+                  src="assets/images/p-hotel6.jpg" alt="Photo of sunset">
+
+              </a>
+              <div class="wishlist position-absolute end-0 top-0 text-white fs-4 me-3 mt-3">
+                <input class="d-none" type="checkbox" name="" id="heart3">
+                <label for="heart3" class="abc"><i  class="bi bi-heart-fill"></i></label>
+              </div>
+              <h4 class="card-title mt-3 ms-2">សណ្ឋាគារ ដារ៉ារះ</h4>
+              <div class="stars text-warning">
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star fs-5"></i>
+              </div>
+              <h5 class="item-card-title my-2 Kantumruy"><i class="bi bi-geo-alt-fill"></i> កំពត</h5>
+              <p class="card-text Kantumruy">.Wifi .អាហារ​ .Gym</p>
+              <a href="detail hotel3.html" class="mb-4 mx-5 btn btn-outline-primary hvr-curl-top-left Kantumruy"><i
+                  class="bi bi-eye-fill"></i> មើលបន្ថែម</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 item">
+            <div class="card border-0 item-card card-block text-center" data-aos="fade-right" data-aos-offset="50"
+              data-aos-duration="900">
+              <a class="position-relative" href="detail hotel1.html"><img class="card-img-top"
+                  src="assets/images/p-hotel3.jpg" alt="Photo of sunset">
+
+              </a>
+              <div class="wishlist position-absolute end-0 top-0 text-white fs-4 me-3 mt-3">
+                <input class="d-none" type="checkbox" name="" id="heart4">
+                <label for="heart4" class="abc"><i  class="bi bi-heart-fill"></i></label>
+              </div>
+              <h4 class="card-title mt-3 ms-2">សណ្ឋាគារ ចន្ទមន្នី</h4>
+              <div class="stars text-warning">
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+              </div>
+              <h5 class="item-card-title my-2 Kantumruy"><i class="bi bi-geo-alt-fill"></i> កោះកុង</h5>
+              <p class="card-text Kantumruy">.Wifi .អាហារ​ .Gym</p>
+              <a href="detail hotel1.html" class="mb-4 mx-5 btn btn-outline-primary hvr-curl-top-left Kantumruy"><i
+                  class="bi bi-eye-fill"></i> មើលបន្ថែម</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 item">
+            <div class="card border-0 item-card card-block text-center" data-aos="fade-up" data-aos-offset="50"
+              data-aos-duration="900">
+              <a class="position-relative" href="detail hotel2.html"><img class="card-img-top"
+                  src="assets/images/p-hotel4.webp" alt="Photo of sunset">
+
+              </a>
+              <div class="wishlist position-absolute end-0 top-0 text-white fs-4 me-3 mt-3">
+                <input class="d-none" type="checkbox" name="" id="heart5">
+                <label for="heart5" class="abc"><i  class="bi bi-heart-fill"></i></label>
+              </div>
+              <h4 class="card-title mt-3 ms-2">សណ្ឋាគារ សុខមាន</h4>
+              <div class="stars text-warning">
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+              </div>
+              <h5 class="item-card-title my-2 Kantumruy"><i class="bi bi-geo-alt-fill"></i> ភ្នំពេញ</h5>
+              <p class="card-text Kantumruy">.Wifi .អាហារ .អាងហែលទឺក​</p>
+              <a href="detail hotel2.html" class="mb-4 mx-5 btn btn-outline-primary hvr-curl-top-left Kantumruy"><i
+                  class="bi bi-eye-fill"></i> មើលបន្ថែម</a>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 item">
+            <div class="card border-0 item-card card-block text-center" data-aos="fade-left" data-aos-offset="50"
+              data-aos-duration="900">
+              <a class="position-relative" href="detail hotel3.html"><img class="card-img-top"
+                  src="assets/images/p-hotel5.jpg" alt="Photo of sunset">
+
+              </a>
+              <div class="wishlist position-absolute end-0 top-0 text-white fs-4 me-3 mt-3">
+                <input class="d-none" type="checkbox" name="" id="heart6">
+                <label for="heart6" class="abc"><i  class="bi bi-heart-fill"></i></label>
+              </div>
+              <h4 class="card-title mt-3 ms-2">សណ្ឋាគារ ផ្កាយ៥</h4>
+              <div class="stars text-warning">
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star-fill fs-5"></i>
+                <i class="bi bi-star fs-5"></i>
+              </div>
+              <h5 class="item-card-title my-2 Kantumruy"><i class="bi bi-geo-alt-fill"></i> សៀមរាប</h5>
+              <p class="card-text Kantumruy">.Wifi .អាហារ .អាងហែលទឺក​ .Gym</p>
+              <a href="detail hotel3.html" class="mb-4 mx-5 btn btn-outline-primary hvr-curl-top-left Kantumruy"><i
+                  class="bi bi-eye-fill"></i> មើលបន្ថែម</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <section class="type-hotel py-5 overflow-hidden" id="typeroom">
+      <div class="container px-md-0">
+        <div class="hotel-title ps-0 pb-5 d-flex flex-column">
+          <p class="h1 m-auto">ប្រភេទបន្ទប់</p>
+          <hr class="text-primary">
+        </div>
+        <div class="row row-gap-5 px-3">
+          <div class="col-12 px-0 overflow-hidden" data-aos="fade-left" data-aos-offset="50" data-aos-duration="1200"
+            data-aos-easing="ease-in-sine">
+            <div class="row bg-white">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div id="carouselHero1" class="carousel slide carousel-fade">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/images/family-room1.jpg" class="d-block w-100 object-fit-cover" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/family-room4.jpg" class="d-block w-100 object-fit-cover" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/family-room3.jpg" class="d-block w-100 object-fit-cover" alt="...">
+
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero1"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselHero1"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-8">
+                <ul class="mt-3 fs-5 row g-2 ms-5">
+                  <li class="Dangrek"><i class="bi bi-house-heart"></i> &nbsp;សម្រាប់គ្រួសារ</li>
+                  <li><i class="bi bi-people"></i> &nbsp;ស្នាក់នៅបាន៨នាក់ ទៅ១០នាក់</li>
+                  <li><i class="bi bi-layout-wtf"></i> &nbsp;មានបន្ទប់គេងចំនួន៣</li>
+                  <li><i class="bi bi-water"></i> &nbsp;អាងហែលទឺក បន្ទប់ស្ប៉ា</li>
+                  <li><i class="bi bi-balloon-heart-fill"></i> &nbsp;ប្រកបដោយផាសុខភាព មានសួនច្បារជុំវិញ</li>
+                </ul>
+                <div class="d-flex ms-5 ps-5">
+                  
+                  <a class="veiw-type-room hvr-shrink btn btn-outline-primary mb-2 Kantumruy" href="detail hotel1.html">មើលបន្ថែម</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 px-0 overflow-hidden" data-aos="fade-left" data-aos-offset="50" data-aos-duration="1200"
+            data-aos-easing="ease-in-sine">
+            <div class="row flex-md-row-reverse bg-white">
+              <div class="col-12 col-md-6 col-lg-4 d-flex">
+                <div id="carouselHero2" class="carousel slide carousel-fade">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/images/1bed.jpg" class="d-block w-100 object-fit-cover" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/family-room4.jpg" class="d-block w-100 object-fit-cover" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/family-room3.jpg" class="d-block w-100 object-fit-cover" alt="...">
+
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero2"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselHero2"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-8">
+                <ul class="mt-3 fs-5 row g-2 ms-5">
+                  <li class="ms-lg-5 Dangrek"><i class="bi ms-lg-5 bi-person-hearts"></i> &nbsp;បន្ទប់ឯកជន</li>
+                  <li class="ms-lg-5"><i class="bi ms-lg-5 bi-people"></i> &nbsp;ស្នាក់នៅបាន​ ២ ទៅ ៣នាក់</li>
+                  <li class="ms-lg-5"><i class="bi ms-lg-5 bi-layout-wtf"></i> &nbsp;មានគ្រែគេងចំនួន ១</li>
+                  <li class="ms-lg-5"><i class="bi ms-lg-5 bi-water"></i> &nbsp;ស្ងប់ស្ងាត់</li>
+                  <li class="ms-lg-5"><i class="bi ms-lg-5 bi-balloon-heart-fill"></i> &nbsp;ប្រកបដោយផាសុខភាព
+                    សុវត្ថភាព
+                  </li>
+                </ul>
+                <div class="d-flex ms-5 ps-5">
+                  <p class="ps-lg-5"></p>
+                  
+                  <a class="veiw-type-room hvr-shrink ms-lg-5 btn btn-outline-primary mb-2 Kantumruy" href="detail hotel1.html">មើលបន្ថែម</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 px-0 overflow-hidden" data-aos="fade-left" data-aos-offset="50" data-aos-duration="1200"
+            data-aos-easing="ease-in-sine">
+            <div class="row bg-white">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div id="carouselHero3" class="carousel slide carousel-fade">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/images/2bed.jpg" class="d-block w-100 object-fit-cover" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/family-room1.jpg" class="d-block w-100 object-fit-cover" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/family-room3.jpg" class="d-block w-100 object-fit-cover" alt="...">
+
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero3"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselHero3"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-8">
+                <ul class="mt-3 fs-5 row g-2 ms-5">
+                  <li class="Dangrek"><i class="bi bi-person-hearts"></i> &nbsp;បន្ទប់ឯកជន</li>
+                  <li><i class="bi bi-people"></i> &nbsp;ស្នាក់នៅបាន​ ៤ ទៅ ៥នាក់</li>
+                  <li><i class="bi bi-layout-wtf"></i> &nbsp;មានគ្រែគេងចំនួន ២</li>
+                  <li><i class="bi bi-water"></i> &nbsp;សុវត្ថភាព</li>
+                  <li><i class="bi bi-balloon-heart-fill"></i> &nbsp;ប្រកបដោយផាសុខភាព មានសួនច្បារជុំវិញ</li>
+                </ul>
+                <div class="d-flex ms-5 ps-5">
+             
+                  <a class="veiw-type-room hvr-shrink btn btn-outline-primary mb-2 Kantumruy" href="detail hotel1.html">មើលបន្ថែម</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 px-0 overflow-hidden" data-aos="fade-left" data-aos-offset="50" data-aos-duration="1200"
+            data-aos-easing="ease-in-sine">
+            <div class="row flex-md-row-reverse bg-white">
+              <div class="col-12 col-md-6 col-lg-4">
+                <div id="carouselHero4" class="carousel slide carousel-fade">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="assets/images/roomwork.jpg" class="d-block w-100 object-fit-cover" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/family-room1.jpg" class="d-block w-100 object-fit-cover" alt="...">
+
+                    </div>
+                    <div class="carousel-item">
+                      <img src="assets/images/family-room3.jpg" class="d-block w-100 object-fit-cover" alt="...">
+
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero4"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselHero4"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-8">
+                <ul class="mt-3 fs-5 row g-2 ms-5">
+                  <li class="ms-lg-5 Dangrek"><i class="bi ms-lg-5 bi-person-workspace"></i> &nbsp;សម្រាប់ការងារ</li>
+                  <li class="ms-lg-5"><i class="bi ms-lg-5 bi-people"></i> &nbsp;ស្នាក់នៅបាន ៨នាក់</li>
+                  <li class="ms-lg-5"><i class="bi ms-lg-5 bi-layout-wtf"></i> &nbsp;មានបន្ទប់គេងចំនួន ២</li>
+                  <li class="ms-lg-5"><i class="bi ms-lg-5 bi-water"></i> &nbsp;បន្ទប់ប្រជុំ ១</li>
+                  <li class="ms-lg-5"><i class="bi ms-lg-5 bi-balloon-heart-fill"></i> &nbsp;ប្រកបដោយផាសុខភាព
+                    ស្ងប់ស្ងាត់</li>
+                </ul>
+                <div class="d-flex ms-5 ps-5">
+                  <p class="ps-lg-5"></p>
+                  <a class="veiw-type-room hvr-shrink ms-lg-5 btn btn-outline-primary mb-2 Kantumruy" href="detail hotel1.html">មើលបន្ថែម</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hotel-gallary-bottom pt-3">
+      <div class="container-flude position-relative mb-4">
+        <img class="w-100 border" src="assets/images/buttom-banner.png" alt="#">
+        <div
+          class="row mx-0 box-info-banner-bottom position-absolute h-100 w-100 bg-dark bg-opacity-50 top-0 d-flex justify-content-center align-items-center">
+          <div class="col-4 d-none d-lg-block h-100 position-relative">
+            <img class="position-absolute z-1" data-aos="fade-down" data-aos-offset="400" data-aos-duration="900"
+              data-aos-easing="ease-in-sine" src="assets/images/bottom-pic2.jpg" alt="">
+            <img class="position-absolute z-3" data-aos="fade-up" data-aos-offset="380" data-aos-duration="900"
+              data-aos-easing="ease-in-sine" src="assets/images/bottom-pic4.jpg" alt="">
+
+          </div>
+          <div class="col-12 col-lg-8 h-100 d-flex justify-content-center align-items-center flex-column">
+            <p class="display-5 fw-bold text-white Dangrek lh-base">ទទួលបាននូវផាសុខភាព មានទំនុកចិត្តខ្ពស់ពីខាងយើងខ្ញុំ
+            </p>
+            <div class="button-box align-self-lg-start ms-lg-5 mt-lg-1">
+              <a class="Kantumruy text-decoration-none rounded-2 hvr-shrink"
+                href="detail hotel1.html">មើលលម្អិតបន្ថែម</a>
+              <a class="Kantumruy text-decoration-none rounded-2 ms-2 hvr-wobble-horizontal"
+                href="contact.html">ទំនាក់ទំនងយើង</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <footer id="footer" class="footer">
+
+    <div class="container footer-top">
+      <div class="row gy-4">
+        <div class="col-lg-4 col-md-6 footer-about">
+          <a href="index.html" class="d-flex align-items-center">
+            <img src="./assets/images/hmp-tour-high-resolution-logo-transparent.png" width="150" alt="">
+          </a>
+          <div class="footer-contact pt-3">
+            <p>ទួលគោក​​​ ភ្នំពេញ </p>
+
+            <p class="mt-3"><strong>លេខទូរស័ព្ទ:</strong> <span>015 8574 332</span></p>
+            <p><strong>អុីម៉េល:</strong> <span>tityapong@gmail.com</span></p>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>តំណ​ភ្ជាប់​ដែល​មានប្រយោជន៍</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="./Home.html">ទំព័រដើម</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="./about_page.html">អំពីយើង</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="./service.html">សេវាកម្ម</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="./kampot.html">ដំណើរកំសាន្ត</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+          <h4>សេវាកម្មរបស់យើង</h4>
+          <ul>
+            <li><i class="bi bi-chevron-right"></i> <a href="./restaurants.html">ម្ហូបអាហារ</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="./hotel.html">ប្រភេទនៃបន្ទប់</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="./gym.html">ស្ប៉ា និងកន្លែងហាត់ប្រាណ</a></li>
+            <li><i class="bi bi-chevron-right"></i> <a href="./service.html">សុវត្ថិភាព និងកន្លែងស្អាត</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+          <h4>បណ្តាញសង្គម</h4>
+          <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
+          <div class="social-links d-flex">
+            <a href=""><i class="bi bi-twitter-x"></i></a>
+            <a href=""><i class="bi bi-facebook"></i></a>
+            <a href=""><i class="bi bi-instagram"></i></a>
+            <a href=""><i class="bi bi-linkedin"></i></a>
+          </div>
+
+          <h4 class="mt-4">ការទូទាត់ និងសុវត្ថិភាព</h4>
+          <div class="payment-card d-flex gap-2 ">
+            <img src="./assets/images/credit-card.svg" width="50px" alt="">
+            <img src="./assets/images/mastercard.svg" width="40px" alt="">
+            <img src="./assets/images/paypal.svg" width="40px" alt="">
+            <img src="./assets/images/visa.svg" width="40px" alt="">
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container copyright text-center mt-4">
+
+      <p><strong>រក្សាសិទ្ធដោយក្រុមទី5</strong></p>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top  d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+</body>
+<script>
+  var selector = '.abc';
+
+  $(selector).on('click', function () {
+    $(selector).removeClass('activewish');
+    $(this).addClass('activewish');
+  });
+</script>
+<script src="./assets/vendor/aos/aos.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/darkmode.js"></script>
+<script src="./assets/js/scrool.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/flatpickr.js"></script>
+<script>
+  $("#checkout").flatpickr({
+    enableTime: false,
+    dateFormat: "F, d Y H:i"
+  });
+  $("#checkin").flatpickr({
+    enableTime: true,
+    dateFormat: "F, d Y H:i"
+  });
+</script>
+
+
+</html>

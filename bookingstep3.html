@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>booking</title>
+    <link rel="stylesheet" href="./assets/styles/bootstrap.css">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/flatpickr.min.css">
+    <link rel="stylesheet" href="./assets/styles/hover.css">
+    <link rel="stylesheet" href="./assets/styles/bootstrap-icons/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body class="bg-jar">
+
+    <header>
+        <nav id="nav-scroll" class="navbar navbar-expand-lg fixed-top bg-transparent">
+            <div class="container">
+                <a class="navbar-brand me-auto  mb-2" href="Home.html">
+
+                    <img src="./assets/images/hmp-tour-high-resolution-logo-transparent.png" width="170px" alt="">
+
+                </a>
+
+                <div class="social">
+                    <nav class="header-nav ms-auto ">
+                        <ul class="d-flex align-items-center">
+
+                            <li>
+                                <button type="button" class=" btn btn-mode d-lg-block me-3"
+                                    aria-label="Change to light theme" data-theme-toggle> <i
+                                        class="fa-regular fa-moon"></i></button>
+
+                            </li>
+                            <li class=" dropdown">
+
+                                <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+                                    <i class="bi bi-bell"></i>
+                                    <span class="badge   bg-danger badge-number">3</span>
+                                </a><!-- End Notification Icon -->
+
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications ">
+                                    <li class="dropdown-header">
+                                        អ្នកមានការជូនដំណឹងថ្មីចំនួន3
+                                        <a href="#"><span class="badge rounded-pill view-all p-2 ms-2">
+                                                មើលទាំងអស់
+                                            </span></a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li class="notification-item">
+                                        <!-- <i class="bi bi-exclamation-circle text-warning"></i> -->
+                                        <img src="./assets/images/globe-showing-asia-australia.svg" width="35px" alt="">
+                                        <div>
+                                            <h4>ដំណើរកំសាន្ត</h4>
+                                            <p>ស្វែងរកទីកន្លែងថ្មីជាមួយនឹងដំណើរកម្សាន្តនាពេលខាងមុខរបស់យើង!
+                                                កុំខកខានបទពិសោធន៍ដែលមិនអាចបំភ្លេចបាន និងគោលដៅដ៏អស្ចារ្យ។</p>
+                                            <p>30 min. ago</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li class="notification-item">
+                                        <!-- <i class="bi bi-x-circle text-danger"></i> -->
+                                        <img src="./assets/images/glowing-star.svg" width="35px" alt="">
+                                        <div>
+                                            <h4>ការបញ្ចុះតម្លៃ</h4>
+                                            <p>ការផ្តល់ជូនពេលវេលាមានកំណត់! រីករាយជាមួយការបញ្ចុះតម្លៃ 30%
+                                                លើដំណើរកម្សាន្តដ៏រំភើបរបស់យើង។
+                                                កុំ​ឲ្យ​ឱកាស​នេះ​កន្លង​ផុត​ទៅ​ដើម្បី​ស្វែង​យល់​ពី​កន្លែងកម្សាន្ត​ក្នុង​តម្លៃ​តិច!
+                                            </p>
+                                            <p>1 hr. ago</p>
+                                        </div>
+                                    </li>
+
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li class="notification-item">
+                                        <i class="bi bi-check-circle text-success"></i>
+                                        <div>
+                                            <h4>សេវាកម្មនិងទំនុកចិត្ត</h4>
+                                            <p>.ការធ្វើដំណើរដែលបានគ្រោងទុកយ៉ាងល្អិតល្អន់
+                                                និងមគ្គុទ្ទេសក៍ដែលមានចំណេះដឹងដល់ការដឹកជញ្ជូនប្រកបដោយផាសុកភាព
+                                                និងការអត្ថាធិប្បាយប្រកបដោយការយល់ដឹង
+                                                យើងធានាថាគ្រប់ទិដ្ឋភាពនៃការធ្វើដំណើររបស់អ្នកត្រូវបានយកចិត្តទុកដាក់។</p>
+                                            <p>2 hrs. ago</p>
+                                        </div>
+                                    </li>
+
+
+
+                                </ul>
+                                <!-- End Notification Dropdown Items -->
+
+                            </li>
+                            <li class=" dropdown pe-3">
+
+                                <a class="nav-link nav-profile d-flex align-items-center img-fluid pe-0" href="#"
+                                    data-bs-toggle="dropdown">
+                                    <img src="./assets/images/photo_2023-08-11 12.02.31.jpeg" alt="Profile"
+                                        class="rounded-circle">
+                                    <span class="d-none d-md-block dropdown-toggle ps-2 Dangrek">ទិត្យាពង្ស</span>
+                                </a><!-- End Profile Iamge Icon -->
+
+                            
+                                <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile ">
+                                    <li class="dropdown-header">
+                                        <h6 class="Kantumruy">ទិត្យាពង្ស</h6>
+
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="./Profile.html">
+                                            <i class="bi bi-person me-2"></i>
+                                            <span> ប្រវត្តរូប</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="./wish.html">
+                                            <i class="bi bi-bag-heart-fill me-2"></i>
+                                            <span>ចំណង់ចំណូលចិត្ត</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="./hisoty-book.html">
+                                            <i class="bi bi-clock-history me-2"></i>
+                                            <span>ប្រវត្តនៃការកក់</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+
+                                    <li>
+                                        <a class="dropdown-item d-flex align-items-center" href="./index.html">
+                                            <i class="bi bi-box-arrow-right me-2"></i>
+                                            <span>ចាកចេញ</span>
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </li>
+
+                            <!-- End Profile Nav -->
+
+                        </ul>
+                    </nav>
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <div class="container-xxl py-5">
+            <div class="container booking2">
+                <div class="text-center mt-4">
+                    <h3 class="section-title main-ti text-center Dangrek">ដំណើរការកក់</h3>
+                </div>
+
+                <div class="progress-steps mt-3">
+                    <div class="top step3">
+                        <div class="d-flex">
+                            <div class="progress"><span></span></div>
+                            <div class="progress"><span></span></div>
+                            <div class="progress"><span></span></div>
+                        </div>
+                        <div class="steps">
+                            <a href="bookingstep1.html" class="step active text-decoration-none"
+                                data-step="1"><span>1</span></a>
+                            <a href="bookingstep2.html" class="step active text-decoration-none"
+                                data-step="2"><span>2</span></a>
+                            <div class="step active" data-step="3"><span>3</span></div>
+                            <!-- <div class="step" data-step="4"><span>4</span></div> -->
+                        </div>
+                    </div>
+
+                </div>
+                <form action="#">
+                    <div class="row g-5">
+
+                        <div class="col-lg-7 overflow-hidden">
+
+                            <div class="border form-booking rounded p-4" data-aos="fade-left" data-aos-offset="50"
+                                data-aos-duration="900">
+                                <h5 class="title Dangrek">បំពេញព័ត៌មានកាត</h5>
+                                <hr>
+                                <div class="row g-3">
+                                    <div class="col-12">
+                                        <p class="Kantumruy fs-5 fw-medium ms-2">បង់ប្រាក់ជាមួយ៖</p>
+                                        <div class="d-flex">
+                                            <div class="cart">
+                                                <img class="pe-2" src="./assets/images/credit-card.svg" width="50px"
+                                                    alt="">
+                                                <img class="pe-2" src="./assets/images/mastercard.svg" width="50px"
+                                                    alt="">
+                                                <img class="pe-2" src="./assets/images/paypal.svg" width="55px" alt="">
+                                                <img class="bg-white" src="./assets/images/visa.svg" width="40px"
+                                                    alt="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="namecart"
+                                                placeholder="Your Name">
+                                            <label for="namecart" class="Kantumruy">ឈ្មោះកាត</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-6">
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="numbercart"
+                                                placeholder="Your Name">
+                                            <label for="numbercart" class="Kantumruy">លេខកាត</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating">
+                                            <input type="date" class="form-control" id="checkin"
+                                                placeholder="Your Name">
+                                            <label for="expire" class="Kantumruy">ថ្ងៃផុតកំណត់</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-9 col-sm-10">
+                                        <p class="Kantumruy fs-5 fw-medium ms-2">កូដបញ្ចុះតម្លៃ៖</p>
+                                        <div class="form-floating">
+                                            <input type="text" class="form-control" id="couponCode"
+                                                placeholder="Your Name">
+                                            <label for="expire" class="Kantumruy">បញ្ចូលកូដ*</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 col-sm-2 mt-4 d-flex align-items-end">
+                                        <button type="button"
+                                            class="btn-step-one border-0 rounded h-50 Kantumruy w-100 hvr-outline-out"
+                                            onclick="applyDiscount()">ប្រើកូដ</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" data-aos="fade-left" data-aos-offset="50" data-aos-duration="900">
+                                <div class="col-12">
+                                    <div class="form-booking text-note px-4 pt-3 pb-1 mt-4 rounded border Kantumruy">
+                                        <p><i class="bi bi-journal-check text-danger"></i> <span
+                                                class="text-danger">ចំណាំ*</span> សូមពិនិត្យអំពីព័ត៌មានកក់របស់អ្នក
+                                            អតិថិជនមិនអាចលុបការកក់ប្ដូរយកប្រាក់វិញទេបន្ទាប់ពីបានកក់សេវាកម្មរួច
+                                            ពិនិត្យមើលថ្លៃបន្ថែម ឬការគិតថ្លៃដែលមិនរាប់បញ្ចូលក្នុងតម្លៃដំបូង
+                                            ទាក់ទងសណ្ឋាគារដោយផ្ទាល់សម្រាប់សំណើ ឬកង្វល់ពិសេសណាមួយ។ </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5 px-0 h-50 overflow-hidden">
+                            <div class="form-booking border rounded p-3" data-aos="fade-left" data-aos-offset="50"
+                                data-aos-duration="900">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p class="Kantumruy text-color">ប្រភេទបន្ទប់៖ ឯកជន</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="Kantumruy text-color">តម្លៃ៖ $ 49.99 / យប់</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="Kantumruy text-color">ចំនួនថ្ងៃស្នាក់៖ 3យប់</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="Kantumruy text-color">តម្លៃសរុប៖ $ <span id="totalPrice">149.99</span>
+                                        </p>
+                                    </div>
+                                    <hr>
+                                    <div class="col-md-6">
+                                        <p class="Kantumruy text-color">បញ្ចុះតម្លៃ៖ <span
+                                                id="discountpercent">0</span>%</p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <p class="Kantumruy text-color">$ <span id="discountAmount">0</span></p>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h6 class="Kantumruy text-color">តម្លៃត្រូវចំណាយ៖ </h6>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h5 class="Kantumruy text-color">$ <span id="discountedPrice">149.99</span></h5>
+                                    </div>
+                                    <div class="col-12 mt-4">
+
+                                        <div
+                                            class="float-md-end w-100 d-flex align-items-center justify-content-center justify-content-lg-end">
+                                            <a href="bookingstep2.html"
+                                                class="btn btn-outline-danger me-2 Kantumruy">ត្រឡប់</a>
+                                            <a href="#" role="button" data-bs-toggle="modal"
+                                                data-bs-target="#SuccesModal"
+                                                class="btn-step-one rounded text-decoration-none py-2 px-4 Kantumruy hvr-grow"
+                                                type="submit">បញ្ជាក់ការកក់</a>
+                                            <!-- <button type="submit"
+                                            class="btn-step-one border-0 rounded text-decoration-none text-center py-2 px-5 float-end Kantumruy hvr-grow"
+                                            data-bs-toggle="modal" data-bs-target="#SuccesModal">បញ្ជាក់ការកក់</button> -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+        <div class="container-flude">
+            <div class="modal fade" id="SuccesModal" data-bs-backdrop="static" tabindex="-1"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog  mt-5">
+                    <div class="modal-content success w-100 bg-transparent border-0">
+                        <div class="modal-body rounded">
+                            <div class="message">
+                                <div class="check position-relative">
+                                    <p
+                                        class="check1 border d-flex justify-content-center align-items-center m-auto position-absolute">
+                                        &#10004;</p>
+                                </div>
+                                <h3 class="Dangrek text-center text-color">ការកក់ទទួលបានជោគជ័យ</h3>
+                                <p class="Kantumruy text-center my-4 ">ការកក់របស់អ្នកត្រូវបានបញ្ជាក់
+                                    ពិនិត្យអ៊ីមែលរបស់អ្នកសម្រាប់ព័ត៌មានលម្អិត។<br> សូមអគុណ!</p>
+                                <button type="button"
+                                    class="close-success d-flex justify-content-center align-items-center btn m-auto Kantumruy fs-5 text-color-modal"
+                                    data-bs-dismiss="modal" aria-label="Close" id="liveToastBtn">យល់ព្រម</button>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="toast-container position-fixed bottom-0 end-0 p-3 mb-5">
+            <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <img src="./assets/images/hmp-tour-high-resolution-logo-transparent.png" class="rounded me-2 w-25"
+                        alt="...">
+                    <strong class="me-auto Kantumruy">សូមអរគុណ</strong>
+                    <small>1 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body text-black Kantumruy">
+                    សូមអគុណដែលជ្រើសសេវាកម្មHMP សូមសំណាងល្អ!
+                </div>
+            </div>
+        </div>
+    </main>
+  
+    <footer id="footer" class="footer">
+
+        <div class="container footer-top">
+            <div class="row gy-4">
+                <div class="col-lg-4 col-md-6 footer-about">
+                    <a href="index.html" class="d-flex align-items-center">
+                        <img src="./assets/images/hmp-tour-high-resolution-logo-transparent.png" width="150" alt="">
+                    </a>
+                    <div class="footer-contact pt-3">
+                        <p>ទួលគោក​​​ ភ្នំពេញ </p>
+  
+                        <p ><strong>លេខទូរស័ព្ទ:</strong> <span><a href="tel:015 758787" class=" fs-6 text-decoration-none">០15758787</a></span></p>
+                        <p><strong>អុីម៉េល:</strong> <span><a href="mailto:tityapong77@gmail.com" class="text-decoration-none fs-6">tityapong77@gmail.com</a></span></p>
+                        <!-- <a href="kansokmean006@gmail.com">send email</a> -->
+                        <!-- <p class="x"><a href="mailto:tityapong77@gmail.com">tityapong77@gmail.com</a></p> -->
+                    </div>
+                </div>
+  
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>តំណ​ភ្ជាប់​ដែល​មានប្រយោជន៍</h4>
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./Home.html">ទំព័រដើម</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./about_page.html">អំពីយើង</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./service.html">សេវាកម្ម</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./kampot.html">ដំណើរកំសាន្ត</a></li>
+                    </ul>
+                </div>
+  
+                <div class="col-lg-2 col-md-6 footer-links">
+                    <h4>សេវាកម្មរបស់យើង</h4>
+                    <ul>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./restaurants.html">ម្ហូបអាហារ</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./hotel.html">ប្រភេទនៃបន្ទប់</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./gym.html">ស្ប៉ា និងកន្លែងហាត់ប្រាណ</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="./service.html">សុវត្ថិភាព និងកន្លែងស្អាត</a></li>
+                    </ul>
+                </div>
+  
+                <div class="col-lg-4 col-md-6">
+                    <h4>បណ្តាញសង្គម</h4>
+                    <!-- <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p> -->
+                    <div class="social-links d-flex">
+                        <a href=""><i class="bi bi-twitter-x"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100041282045035&mibextid=LQQJ4d"><i class="bi bi-facebook"></i></a>
+                        <a href=""><i class="bi bi-instagram"></i></a>
+                        <a href=""><i class="bi bi-linkedin"></i></a>
+                    </div>
+  
+                    <h4 class="mt-4">ការទូទាត់ និងសុវត្ថិភាព</h4>
+                    <div class="payment-card d-flex gap-2 ">
+                        <img src="./assets/images/credit-card.svg" width="50px" alt="">
+                        <img src="./assets/images/mastercard.svg" width="40px" alt="">
+                        <img src="./assets/images/paypal.svg" width="40px" alt="">
+                        <img src="./assets/images/visa.svg" width="40px" alt="">
+                    </div>
+  
+                </div>
+  
+            </div>
+        </div>
+  
+        <div class="container copyright text-center mt-4">
+  
+            <p><strong>រក្សាសិទ្ធដោយក្រុមទី5</strong></p>
+        </div>
+  
+    </footer>
+  
+
+
+
+    <!-- Scroll Top -->
+    <a href="#" id="scroll-top" class="scroll-top  d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+</body>
+<script src="./assets/vendor/aos/aos.js"></script>
+<script src="./assets/js/bootstrap.bundle.min.js"></script>
+<script src="./assets/js/darkmode.js"></script>
+<script src="./assets/js/scrool.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="assets/js/jquery-3.7.1.min.js"></script>
+<script src="assets/js/flatpickr.js"></script>
+<script>
+
+    $("#checkin").flatpickr({
+        enableTime: true,
+        dateFormat: "F, d Y "
+    });
+</script>
+<script>
+    function applyDiscount() {
+
+        const totalPriceElement = document.getElementById('totalPrice');
+        const discountedPriceElement = document.getElementById('discountedPrice');
+        const couponCodeElement = document.getElementById('couponCode');
+        const amountDis = document.getElementById('discountAmount');
+        const percentDis = document.getElementById('discountpercent');
+
+        const totalPrice = parseFloat(totalPriceElement.textContent);
+        const couponCode = couponCodeElement.value;
+
+        //'DISCOUNT10' is the coupon code
+        const validCouponCode = 'DISCOUNT10';
+        const discountPercentage = 0.10;
+
+        if (couponCode === validCouponCode) {
+            const discountpercent = 10;
+            const discountAmount = totalPrice * discountPercentage;
+            const discountedPrice = totalPrice - discountAmount;
+            amountDis.textContent = discountAmount.toFixed(2);
+            discountedPriceElement.textContent = discountedPrice.toFixed(2);
+            percentDis.textContent = discountpercent.toFixed(2);
+        } else {
+            alert('Invalid coupon code');
+            discountedPriceElement.textContent = totalPrice.toFixed(2);
+        }
+    }
+</script>
+<script>
+    const toastTrigger = document.getElementById('liveToastBtn')
+    const toastLiveExample = document.getElementById('liveToast')
+
+    if (toastTrigger) {
+        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+        toastTrigger.addEventListener('click', () => {
+            toastBootstrap.show()
+        })
+    }
+</script>
+
+
+
+</html>
